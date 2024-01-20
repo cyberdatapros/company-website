@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "@/css/nav.module.css";
 import { Menu } from "antd";
 import links from "./NavLinks";
+import Image from "next/image";
 
 const DesktopNav = ({
   windowSize,
@@ -33,7 +34,7 @@ const DesktopNav = ({
         backgroundColor: color,
       }}
     >
-      <img
+      <Image
         style={{
           marginRight: 50,
         }}
@@ -45,13 +46,14 @@ const DesktopNav = ({
         height={100}
       />
       {windowSize < 800 ? (
-        <img
+        <Image
           src="https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752836/icons/1_iolcif.svg"
           width={25}
           height={25}
           onClick={() => triggerMobileNav()}
+          alt="close mobile menu"
           aria-label="button"
-        ></img>
+        />
       ) : (
         <Menu
           triggerSubMenuAction="click"

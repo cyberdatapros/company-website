@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
           <ul className={styles["contact-info"]}>
             <li className={styles["contact-info-item"]}>
               <a href="tel:404-919-0859" rel="nofollow">
-                <img
+                <Image
                   src={
                     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705763417/icons/phone-contact-icon_thufi7.svg"
                   }
@@ -65,7 +65,7 @@ const ContactPage: React.FC = () => {
             </li>
             <li className={styles["contact-info-item"]}>
               <a href="mailto:info@cyberdatapros.com">
-                <img
+                <Image
                   src={
                     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705763442/icons/email-contact-icon_czxajm.svg"
                   }
@@ -168,7 +168,7 @@ const ContactPage: React.FC = () => {
             required
           />
           <button className={styles["submit-button"]} type="submit">
-            lets's get started
+            lets&apos;s get started
           </button>
           {displayMsg && (
             <p

@@ -2,12 +2,13 @@ import { Menu } from "antd";
 import React from "react";
 import links from "./NavLinks";
 import style from "@/css/nav.module.css";
+import Image from "next/image";
 
 const MobileNav = ({ triggerMobileNav }: { triggerMobileNav: () => void }) => {
   return (
     <div className={style["mobile-nav-wrapper"]}>
       <div className={style["mobile-logo-container"]}>
-        <img
+        <Image
           src={
             "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705754252/cdp-logo-dark_bbikgh.svg"
           }
@@ -15,7 +16,7 @@ const MobileNav = ({ triggerMobileNav }: { triggerMobileNav: () => void }) => {
           width={220}
           height={110}
         />
-        <img
+        <Image
           src={
             "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752943/icons/3_zwfnpa.svg"
           }

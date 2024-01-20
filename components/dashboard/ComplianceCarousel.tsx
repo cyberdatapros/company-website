@@ -1,6 +1,7 @@
 import React from "react";
 import style from "@/css/compliance-carousel.module.css";
 import { complianceBadges } from "@/data/complianceBadgesDashboard";
+import Image from "next/image";
 
 const listItems = complianceBadges.map(({ title, image, color }, index) => (
   <div
@@ -10,7 +11,13 @@ const listItems = complianceBadges.map(({ title, image, color }, index) => (
       backgroundColor: color,
     }}
   >
-    <img key={title} src={image} width={100} height={100} alt={""} />
+    <Image
+      key={title}
+      src={image}
+      width={100}
+      height={100}
+      alt={`${title} badge`}
+    />
     <p>{title}</p>
   </div>
 ));
