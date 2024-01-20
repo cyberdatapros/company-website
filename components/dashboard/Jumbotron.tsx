@@ -16,7 +16,7 @@ const Jumbotron = () => {
           specializes in identifying and remediating security gaps, ensuring
           that your business remains protected against future threats.
         </p>
-        <img
+        <Image
           className={styles["jumbo-gif"]}
           src={"https://media.giphy.com/media/077i6AULCXc0FKTj9s/giphy.gif"}
           alt={"gif image"}
@@ -24,7 +24,7 @@ const Jumbotron = () => {
           height={50}
         />
       </div>
-      <img
+      <Image
         style={{
           position: "absolute",
           right: -50,
