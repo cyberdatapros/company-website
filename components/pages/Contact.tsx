@@ -45,7 +45,7 @@ const ContactPage: React.FC = () => {
             <strong className={styles["highlight-text"]}> an expert</strong>
           </h1>
           <p className={styles["contact-paragraph"]}>
-            You're just a few clicks away from securing a complimentary
+            You&apos;re just a few clicks away from securing a complimentary
             consultation. Provide your details, and you can expect to hear from
             us within the next 24 hours.
           </p>
