@@ -6,10 +6,10 @@ const Jumbotron = () => {
   return (
     <div className={styles.jumbotron}>
       <div className={styles.textContainer}>
-        <h2 className={styles.slogan}>
+        <h1 className={styles.slogan}>
           Data Privacy & Security made{" "}
           <span className={styles.highlightText}>simple</span>
-        </h2>
+        </h1>
         <p className={styles.slogan2}>
           At CyberData Pros, we understand that keeping up with the changing
           data security and compliance requirements is a full-time job. Our team

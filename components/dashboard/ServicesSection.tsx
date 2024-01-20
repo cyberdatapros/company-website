@@ -6,7 +6,7 @@ import servicesArray from "@/data/dashboardServicesData";
 const ServicesSectionDashboard = () => {
   return (
     <div className={styles["services-container"]}>
-      <span className={styles["heading"]}>Browse Our services</span>
+      <h2 className={styles["heading"]}>Browse Our services</h2>
       <p className={styles["sub-heading"]}>
         Regardless of whether your business is small or large, located in the US
         or abroad, our approach guarantees that we meet your security
@@ -22,7 +22,7 @@ const ServicesSectionDashboard = () => {
               position: "relative",
             }}
           >
-            <h4 className={styles["service-title"]}>{title}</h4>
+            <h3 className={styles["service-title"]}>{title}</h3>
             <p className={styles["service-description"]}>{description}</p>
             <span className={styles["learn-text"]}>Learn More</span>
           </Link>

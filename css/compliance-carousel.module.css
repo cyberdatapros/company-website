@@ -1,0 +1,73 @@
+.compliance-slider {
+  --white-gradient: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --animation-speed: 40s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.compliance-slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 143px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  border: 5px solid #b58500;
+}
+
+.compliance-slider::before,
+.compliance-slider::after {
+  background-image: var(--white-gradient);
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.compliance-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.compliance-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.compliance-slide-track {
+  animation: scroll var(--animation-speed) linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.compliance-slide-item {
+  border: 1px solid #b58500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  width: 250px;
+}
+
+.compliance-slide-item p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 3;
+  text-transform: uppercase;
+}
