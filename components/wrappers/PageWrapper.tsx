@@ -1,5 +1,10 @@
 import React from "react";
 import styles from "@/css/page-wrapper.module.css";
+import dynamic from "next/dynamic";
+
+const Nav = dynamic(() => import("@/components/nav/NavWrapper"), {
+  ssr: false,
+});
 
 const PageWrapper = ({
   children,
@@ -15,6 +20,7 @@ const PageWrapper = ({
         ...style,
       }}
     >
+      <Nav />
       {children}
     </main>
   );

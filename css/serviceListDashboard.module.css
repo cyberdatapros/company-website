@@ -80,10 +80,6 @@
   flex: 1 50%;
 }
 
-.service-card:hover {
-  transform: scale(1.03);
-}
-
 .service-title {
   font-size: 22px;
   font-weight: 400;
@@ -124,6 +120,10 @@
 @media (min-width: 880px) {
   .service-card {
     flex: 1 33%;
+  }
+
+  .service-card:hover {
+    transform: scale(1.03);
   }
 }
 
