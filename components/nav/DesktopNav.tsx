@@ -39,7 +39,7 @@ const DesktopNav = ({
           marginRight: 50,
         }}
         src={
-          "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705763925/cdp-logo-dark_zhnv53.svg"
+          "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705801083/cdp-logo-blue_jiknqi.png"
         }
         alt={"company logo"}
         width={200}
