@@ -1,0 +1,26 @@
+.dropdown-trigger-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  background-color: #b58500;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  font-size: 16px;
+  transition-timing-function: ease;
+  line-height: 1.5;
+  text-align: left;
+  background-color: rgba(245, 245, 245, 0.711);
+  padding: 10px;
+  border-radius: 5px;
+}

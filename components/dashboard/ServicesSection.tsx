@@ -15,7 +15,7 @@ const ServicesSectionDashboard = () => {
       <div className={styles["cards-container"]}>
         {servicesArray.map(({ title, description }) => (
           <Link
-            href={`/service/${encodeURIComponent(title)}`}
+            href={`/services/${title}`}
             className={styles["service-card"]}
             key={title}
             style={{

@@ -21,12 +21,13 @@ export const getItem = (
 };
 
 const getServiceItemLinks = (service: keyof ServicesType) => {
-  const Links = Object.keys(servicesData[service]).map((key) => {
-    const { title } = servicesData[service][key];
+  const Links = servicesData[service].segments.map((key) => {
+    const { title, url, shortHand } = key;
     return getItem(
-      <Link href={`/service/${service}/${title}`}>
-        {servicesData[service][key].title}
-      </Link>,
+      <Link
+        href={`/services/${service}/${url}`}
+        dangerouslySetInnerHTML={{ __html: shortHand || title }}
+      />,
       `${service}-${key}`,
       <></>
     );
