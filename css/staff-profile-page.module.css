@@ -1,15 +1,16 @@
 .profile-page {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   /* padding: 20% 5%; */
   display: grid;
   grid-template-rows: repeat(1, 1fr);
   /* grid-auto-columns: minmax(300px, auto); */
-  background-color: white;
+  background-color: whitesmoke;
   padding-top: 100px;
+  padding-bottom: 50px;
   /* justify-content: center; */
   /* align-items: center; */
-  gap: 30px;
+  /* gap: 10px; */
 }
 
 .profile-details-container {
@@ -43,8 +44,8 @@
 }
 
 .profile-image {
-  width: 175px;
-  height: 175px;
+  width: 240px;
+  height: 240px;
   /* clip-path: circle(50% at 50% 50%); */
   border: 5px solid var(--brand-gold);
   background-color: rgb(169, 166, 166);
@@ -77,6 +78,7 @@
     /* padding: 10%; */
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
+    /* min-height: 100vh; */
   }
 
   .profile-image {

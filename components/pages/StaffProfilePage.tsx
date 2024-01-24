@@ -13,7 +13,11 @@ const StaffProfilePage = ({ name }: { name: string }) => {
   if (!staffMember) return;
 
   return (
-    <PageWrapper>
+    <PageWrapper
+      style={{
+        backgroundColor: "whitesmoke",
+      }}
+    >
       <div className={styles["profile-page"]}>
         <div className={styles["profile-details-container"]}>
           <div className={styles["profile-image"]}>
@@ -41,6 +45,7 @@ const StaffProfilePage = ({ name }: { name: string }) => {
               style={{
                 marginBottom: 10,
                 textTransform: "capitalize",
+                fontSize: 20,
               }}
             >
               About {staffMember.name.split(" ")[0]}

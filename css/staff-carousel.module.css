@@ -24,6 +24,8 @@
   font-size: 40px;
   font-weight: 300;
   border-bottom: 3px solid #b68603;
+  margin-bottom: 14px;
+  padding-left: 20px;
 }
 
 .staff-card {
@@ -37,11 +39,6 @@
   width: 100%;
   height: auto;
   border-radius: 5px;
-}
-
-.staff-card:hover {
-  transform: scale(1.025);
-  cursor: pointer;
 }
 
 .overlay-container {
@@ -98,7 +95,7 @@
 }
 
 .cloud-image {
-  visibility: hidden;
+  display: none;
 }
 
 .staff-carousel-header strong {
@@ -121,16 +118,6 @@
   max-width: 350px;
 }
 
-.carousel-next-button:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.carousel-prev-button:hover {
-  transform: rotate(180deg) scale(1.12) !important;
-  cursor: pointer;
-}
-
 .slick-track {
   display: flex;
 }
@@ -139,6 +126,11 @@
   .staff-section-wrapper {
     flex-direction: row;
     gap: 20px;
+  }
+
+  .staff-card:hover {
+    transform: scale(1.025);
+    cursor: pointer;
   }
 
   .carousel-headers-container {
@@ -161,9 +153,19 @@
   }
 
   .cloud-image {
-    visibility: visible;
+    display: block;
     position: absolute;
     left: -100px;
     bottom: -90px;
+  }
+
+  .carousel-next-button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .carousel-prev-button:hover {
+    transform: rotate(180deg) scale(1.12) !important;
+    cursor: pointer;
   }
 }
