@@ -6,6 +6,10 @@ import dynamic from "next/dynamic";
 const AboutSection = dynamic(
   () => import("@/components/dashboard/AboutSection")
 );
+const StaffCarousel = dynamic(
+  () => import("@/components/dashboard/StaffCarousel"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -14,6 +18,7 @@ export default function Home() {
       <ServicesSectionDashboard />
       <ComplianceCarorusel />
       <AboutSection />
+      <StaffCarousel />
     </PageWrapper>
   );
 }

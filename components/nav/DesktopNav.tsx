@@ -31,7 +31,7 @@ const DesktopNav = ({
     <div
       className={styles["nav-wrapper"]}
       style={{
-        backgroundColor: color,
+        backgroundColor: "white",
       }}
     >
       <Image
