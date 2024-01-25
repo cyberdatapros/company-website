@@ -41,7 +41,7 @@ const ServiceSegmentPage = ({
               </p>
               <Link href={"/contact"}>
                 <button className={style["contact-button"]}>
-                  Contact an expert
+                  Contact a pro
                 </button>
               </Link>
             </div>

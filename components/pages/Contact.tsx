@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
           <span className={styles["help-message"]}>LET US HELP YOU</span>
           <h1 className={styles["heading"]}>
             Connect with{" "}
-            <strong className={styles["highlight-text"]}> an expert</strong>
+            <strong className={styles["highlight-text"]}> a pro </strong>
           </h1>
           <p className={styles["contact-paragraph"]}>
             You&apos;re just a few clicks away from securing a complimentary
