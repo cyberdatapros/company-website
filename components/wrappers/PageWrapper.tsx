@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/css/page-wrapper.module.css";
+import Footer from "../footer/Footer";
 import dynamic from "next/dynamic";
 
 const Nav = dynamic(() => import("@/components/nav/NavWrapper"), {
@@ -22,6 +23,7 @@ const PageWrapper = ({
     >
       <Nav />
       {children}
+      <Footer />
     </main>
   );
 };

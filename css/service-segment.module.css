@@ -60,6 +60,7 @@
   text-transform: capitalize;
   font-family: "DM Sans", sans-serif;
   color: var(--brand-blue);
+  margin-bottom: 12px;
 }
 
 .hero-content-title span {
