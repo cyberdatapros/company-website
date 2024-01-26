@@ -1,4 +1,6 @@
 import ComplianceCarorusel from "@/components/dashboard/ComplianceCarousel";
+import FaqContainer from "@/components/dashboard/FaqContainer";
+import FeedbackCarousel from "@/components/dashboard/FeedbackCarousel";
 import Jumbotron from "@/components/dashboard/Jumbotron";
 import ServicesSectionDashboard from "@/components/dashboard/ServicesSection";
 import PageWrapper from "@/components/wrappers/PageWrapper";
@@ -19,6 +21,8 @@ export default function Home() {
       <ComplianceCarorusel />
       <AboutSection />
       <StaffCarousel />
+      <FaqContainer />
+      <FeedbackCarousel />
     </PageWrapper>
   );
 }
