@@ -33,7 +33,12 @@ const DropDownContent = ({
           height={18}
         />
       </button>
-      {isOpen && <p className={styles["dropdown-content"]}>{downText}</p>}
+      {isOpen && (
+        <div
+          className={styles["dropdown-content"]}
+          dangerouslySetInnerHTML={{ __html: [downText] }}
+        />
+      )}
     </div>
   );
 };

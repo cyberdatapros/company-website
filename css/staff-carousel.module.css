@@ -122,6 +122,11 @@
   display: flex;
 }
 
+.carousel-next-button,
+.carousel-prev-button {
+  display: none;
+}
+
 @media (min-width: 980px) {
   .staff-section-wrapper {
     flex-direction: row;
@@ -157,6 +162,11 @@
     position: absolute;
     left: -100px;
     bottom: -90px;
+  }
+
+  .carousel-next-button,
+  .carousel-prev-button {
+    display: block;
   }
 
   .carousel-next-button:hover {
