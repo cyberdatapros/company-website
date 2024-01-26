@@ -24,7 +24,8 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  border: 5px solid #b58500;
+  border-top: 5px solid #b58500;
+  border-bottom: 5px solid #b58500;
 }
 
 .compliance-slider::before,
@@ -51,7 +52,7 @@
 .compliance-slide-track {
   animation: scroll var(--animation-speed) linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(250px * 12);
 }
 
 .compliance-slide-item {

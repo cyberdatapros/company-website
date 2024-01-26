@@ -47,7 +47,7 @@ const ServiceSegmentPage = ({
             </div>
             <Image
               src={
-                "https://res.cloudinary.com/dzqp0dnia/image/upload/v1706111111/segment-badge_uliswf.svg"
+                "https://res.cloudinary.com/dzqp0dnia/image/upload/v1706266861/1_hbghm3.svg"
               }
               alt={""}
               width={50}
@@ -69,22 +69,18 @@ const ServiceSegmentPage = ({
             <h2>
               We Make it <span>simple.</span>
             </h2>
-            <p>
-              Compliance frameworks can be an effective way to increase customer
-              confidence and reduce your overall costs and risks of data
-              breaches or incidents.
-            </p>
+            <div
+              style={{
+                backgroundColor: "#ffffff70",
+                // padding: 10,
+              }}
+              dangerouslySetInnerHTML={{ __html: pageSegement.textBlock }}
+            />
           </div>
           <div>
-            {["Planning", "Current State Assesment", "Remediation Roadmap"].map(
-              (content) => (
-                <DropDownContent
-                  key={content}
-                  buttonText={content}
-                  downText={content}
-                />
-              )
-            )}
+            {pageSegement.dropDownItems.map(({ title, info }) => (
+              <DropDownContent key={title} buttonText={title} downText={info} />
+            ))}
           </div>
         </div>
       </div>
