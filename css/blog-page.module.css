@@ -4,22 +4,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   padding: 5% 20px;
   color: black;
   position: relative;
   min-height: 90vh;
-  background-color: white;
+  background-color: whitesmoke;
   color: #0033a0;
 }
 
-.responsive-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 20px;
-  gap: 18px;
-  margin: 0 auto;
+.blogs-page-header {
+  margin: 40px 0px 16px;
+  font-size: 28px;
 }
 
 .blog-card {
@@ -28,15 +23,15 @@
   background-color: white;
   padding: 8px;
   text-align: center;
-  width: 250px;
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 400px;
-  max-height: 400px;
+  /* width: auto; */
+  height: 450px;
   position: relative;
-  min-height: 250px;
   border-radius: 20px;
   text-align: left;
+}
+
+.blog-card:hover {
+  transform: scale(1.04);
 }
 
 .card-text-wrapper {
@@ -77,6 +72,7 @@
   letter-spacing: 1.2px;
   left: 10px;
   top: 15px;
+  z-index: 1;
 }
 
 .blog-image-container {
@@ -93,18 +89,22 @@
 }
 
 /* Media Query for Mobile Responsiveness */
-@media (min-width: 600px) {
-  .blogs-page-wrapper {
-    padding: 5% 20px;
-  }
-  .blog-card {
-    max-width: 100%; /* Adjust the width for smaller screens */
+
+@media (min-width: 880px) {
+  .blogs-page-header {
+    margin: 0px 0px 16px;
+    font-size: 40px;
   }
 }
 
-@media (min-width: 1025px) {
-  .responsive-card-container {
-    justify-content: flex-start;
-    padding: 0px 170px;
+@media (min-width: 1125px) {
+  .blogs-page-wrapper {
+    background-image: url("https://res.cloudinary.com/dzqp0dnia/image/upload/v1706126927/back-test_neam9v.svg");
+    background-size: 40%;
+    background-position: right bottom;
+  }
+
+  .blog-card {
+    /* max-width: 275px; */
   }
 }

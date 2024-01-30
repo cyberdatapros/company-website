@@ -1,58 +1,65 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import styles from '@/css/admin-blogs.module.css'
-import Link from 'next/link'
+"use client";
+import React, { useEffect, useState } from "react";
+import styles from "@/css/admin-blogs.module.css";
+import Link from "next/link";
+import { deleteBlog, getAllBlogs } from "@/utils/crudHelpers";
+import { deleteImage } from "@/utils/cloudinaryHelper";
 
-const page = () => {
+const BlogsListAdmin = () => {
   const [blogsData, setblogsData] = useState<
     {
-      id: string
-      createdAt: Date
-      title: string
-      hashTag: string
-      content: string
-      image: string
+      id: string;
+      createdAt: Date;
+      title: string;
+      hashTag: string;
+      content: string;
+      image: string;
     }[]
-  >([])
+  >([]);
 
   const getData = async () => {
-    try {
-      const data = await fetch('/api/blog')
-      const blogs = await data.json()
-      setblogsData(blogs.data)
-    } catch (error) {
-      console.log(error)
+    const data = await getAllBlogs();
+    if (data) {
+      setblogsData(data);
     }
-  }
+  };
 
-  const deleteBlog = async (id: string) => {
-    try {
-      const data = await fetch(`/api/blog/${id}`, {
-        method: 'DELETE',
-      })
-      if (data) {
-        getData()
-      }
-    } catch (error) {
-      console.log(error)
+  const removeBlog = async (id: string, image: string) => {
+    const dBres = deleteBlog(id);
+    const imgDelRes = deleteImage(image);
+    const completed = await Promise.all([imgDelRes, dBres]);
+
+    if (completed) {
+      getData();
     }
-  }
+  };
   useEffect(() => {
-    getData()
-  }, [])
+    getData();
+  }, []);
 
-  if (!blogsData) return <h1>loading...</h1>
+  if (!blogsData) return <h1>loading...</h1>;
   return (
-    <div className={styles['table-wrapper']}>
+    <div className={styles["table-wrapper"]}>
       <Link
-        href={'/admin/blogs/create'}
-        className={styles['action-button']}
+        href={"/admin/blogs/create"}
+        className={styles["action-button"]}
         style={{
-          backgroundColor: 'blue',
-          alignSelf: 'flex-start',
+          backgroundColor: "blue",
+          alignSelf: "flex-start",
+          marginBottom: 12,
         }}
       >
         Create New
+      </Link>
+      <Link
+        href={"/blogs"}
+        className={styles["action-button"]}
+        style={{
+          backgroundColor: "green",
+          alignSelf: "flex-start",
+        }}
+      >
+        Live Blogs Page
       </Link>
       <table className={styles.table}>
         <thead className={styles.thead}>
@@ -61,24 +68,23 @@ const page = () => {
           </tr>
         </thead>
         <tbody>
-          {blogsData.map(({ id, title }) => (
+          {blogsData.map(({ id, title, image }) => (
             <tr key={id}>
-              <td>{title}</td>
+              <td className={styles["blog-link"]}>
+                <Link href={`/blogs/${id}`}>{title}</Link>
+              </td>
               <td>
-                <Link
-                  href={`/admin/blogs/edit/${id}`}
-                  className={styles['action-button']}
-                >
-                  Edit
+                <Link href={`/admin/blogs/edit/${id}`}>
+                  <button className={styles["action-button"]}>Edit</button>
                 </Link>
               </td>
               <td>
                 <button
-                  className={styles['action-button']}
+                  className={styles["action-button"]}
                   style={{
-                    backgroundColor: 'red',
+                    backgroundColor: "red",
                   }}
-                  onClick={() => deleteBlog(id)}
+                  onClick={() => removeBlog(id, image)}
                 >
                   Delete
                 </button>
@@ -88,7 +94,7 @@ const page = () => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default BlogsListAdmin;

@@ -1,6 +1,7 @@
 .table-wrapper {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -10,13 +11,16 @@
 
 .table {
   width: 600px;
-  max-width: 100%;
+  max-width: 700px;
   height: max-content;
 }
 
 .table tr td {
   border: 1px solid #333;
   font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding: 10px;
 }
 
 .thead {
@@ -29,10 +33,16 @@
   background-color: goldenrod;
   color: white;
   border-radius: 5px;
+  font-size: 16px;
   border: none;
 }
 
 .action-button:hover {
   cursor: pointer;
   transform: scale(1.08);
+}
+
+.blog-link:hover {
+  color: var(--brand-blue);
+  cursor: pointer;
 }

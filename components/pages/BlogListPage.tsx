@@ -5,9 +5,12 @@ import Image from "next/image";
 import styles from "@/css/blog-page.module.css";
 import { getAllBlogs } from "@/utils/crudHelpers";
 import { Blog } from "@prisma/client";
-import { Spin } from "antd";
 import Link from "next/link";
 import { getDateFormat } from "@/utils/dataFormatter";
+import LoadingContainer from "../shared/LoadingContainer";
+import CardWrapper from "../wrappers/CardWrapper";
+
+const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_NAME;
 
 const Card = ({
   title,
@@ -26,7 +29,7 @@ const Card = ({
     <Link href={`/blogs/${id}`} className={styles["blog-card"]}>
       <span className={styles["card-tag"]}>#{tag}</span>
       <div className={styles["blog-image-container"]}>
-        <Image src={image} alt={""} width={250} height={100} />
+        <Image src={image} alt={""} width={300} height={300} />
       </div>
       <div className={styles["card-text-wrapper"]}>
         <span className={styles["card-date"]}>{date}</span>
@@ -50,23 +53,23 @@ const BlogList = () => {
     getData();
   }, []);
 
-  if (blogList.length === 0) return <Spin />;
+  if (blogList.length === 0) return <LoadingContainer height={"100vh"} />;
   return (
     <PageWrapper>
       <div className={styles["blogs-page-wrapper"]}>
         <h1 className={styles["blogs-page-header"]}>Read our blogs</h1>
-        <div className={styles["responsive-card-container"]}>
+        <CardWrapper>
           {blogList.map((blog) => (
             <Card
               key={blog.id}
               title={blog.title}
               date={getDateFormat(`${blog.createdAt}`)}
-              image={blog.image}
+              image={`https://res.cloudinary.com/${cloudName}/image/upload/c_fill,h_600,w_600/f_auto/${blog.image}`}
               tag={blog.hashTag}
               id={blog.id}
             />
           ))}
-        </div>
+        </CardWrapper>
       </div>
     </PageWrapper>
   );
