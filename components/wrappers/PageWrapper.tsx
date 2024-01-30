@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/css/page-wrapper.module.css";
 import Footer from "../footer/Footer";
 import dynamic from "next/dynamic";
+import CookieConsent from "../shared/CookieConsent";
 
 const Nav = dynamic(() => import("@/components/nav/NavWrapper"), {
   ssr: false,
@@ -23,6 +24,7 @@ const PageWrapper = ({
     >
       <Nav />
       {children}
+      <CookieConsent />
       <Footer />
     </main>
   );
