@@ -85,6 +85,18 @@ const Footer = () => {
               </Link>
             ))}
           </div>
+          <Link
+            style={{
+              color: "#84878b",
+              marginTop: 20,
+              textAlign: "left",
+              fontSize: 16,
+            }}
+            href={"/privacy-policy"}
+          >
+            {" "}
+            Privacy Policy
+          </Link>
         </div>
         {services.map((service) => (
           <ServiceLinksCollection key={service} serviceTitle={service} />

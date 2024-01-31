@@ -49,6 +49,8 @@ const CookieConsent = () => {
           color: "white",
           width: "max-content",
         }}
+        onClick={acceptCookie}
+        type="button"
       >
         Accept
       </button>

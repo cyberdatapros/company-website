@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import CarouselWrapper from "../wrappers/CarouselWrapper";
 import feedbackArray from "@/data/feedback";
 import styles from "@/css/feedback.module.css";
+import useWindowDimensions from "@/utils/useWindowDemensions";
 
 const FeedbackCard = ({
   text,
@@ -22,11 +24,12 @@ const FeedbackCard = ({
 };
 
 const FeedbackCarousel = () => {
+  const { width } = useWindowDimensions();
   return (
     <CarouselWrapper
       header="Client Feedback"
       subheader="What our happy clients say"
-      maxWidth={450}
+      maxWidth={width > 980 ? 900 : 450}
       style={{
         backgroundColor: "#11131F",
         borderTop: "5px solid #b58500",
