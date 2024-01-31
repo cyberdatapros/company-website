@@ -35,7 +35,7 @@ const ServiceSegmentPage = ({
               <p className={style["segment-descripton"]}>
                 {pageSegement.headLine}
               </p>
-              <Link href={"/contact"}>
+              <Link rel="nofollow" href={"/contact"}>
                 <button className={style["contact-button"]}>
                   Contact a pro
                 </button>

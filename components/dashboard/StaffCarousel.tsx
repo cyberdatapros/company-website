@@ -59,7 +59,7 @@ const StaffCarousel = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false);
-    }, 1000);
+    }, 200);
 
     return () => {
       clearTimeout(timer);
@@ -75,9 +75,18 @@ const StaffCarousel = () => {
           justifyContent: "center",
           width: "100%",
           height: 600,
+          backgroundColor: "white",
         }}
       >
-        <span className="loader"></span>
+        <span
+          style={{
+            width: 100,
+            height: 100,
+            border: `5px solid black`,
+            borderBottomColor: "white",
+          }}
+          className="loader"
+        ></span>
       </div>
     );
   }
