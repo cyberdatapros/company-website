@@ -1,0 +1,45 @@
+.form-wrapper {
+  background: radial-gradient(#3ea8e4, #a8b5cd);
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 1500;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  max-width: 800px;
+  padding: 50px;
+  background-color: whitesmoke;
+}
+
+.submit-button {
+  padding: 5px 10px;
+  width: max-content;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.tips-container {
+  font-size: 16px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tips-container ul li {
+  margin-bottom: 12px;
+}

@@ -20,11 +20,7 @@ const ServiceSegmentPage = ({
   );
 
   if (typeof pageSegement === "undefined") {
-    return (
-      <PageWrapper>
-        <LoadingContainer height={"100vh"} />;
-      </PageWrapper>
-    );
+    return <LoadingContainer height={"100vh"} />;
   }
   return (
     <PageWrapper>

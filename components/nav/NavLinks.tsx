@@ -28,7 +28,7 @@ const getServiceItemLinks = (service: keyof ServicesType) => {
         href={`/services/${service}/${url}`}
         dangerouslySetInnerHTML={{ __html: shortHand || title }}
       />,
-      `${service}-${key}`,
+      `${url}-${title}`,
       <></>
     );
   });
