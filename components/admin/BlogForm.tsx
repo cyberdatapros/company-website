@@ -1,14 +1,10 @@
 "use client";
 import {
-  BlogResponseType,
   UserInputBlogType,
   createBlog,
   getBlog,
   updateBlog,
 } from "@/utils/crudHelpers";
-
-import { CldUploadButton } from "next-cloudinary";
-import { Blog } from "@prisma/client";
 import React, { useCallback, useEffect, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -17,6 +13,7 @@ import { getFileSize } from "@/utils/getFileSize";
 import style from "@/css/blog-form.module.css";
 import Link from "next/link";
 import { deleteImage, imageUpload } from "@/utils/cloudinaryHelper";
+import { log } from "console";
 
 const quillToolBar = [
   ["bold", "italic", "underline", "strike"],
@@ -27,6 +24,25 @@ const quillToolBar = [
   ["undo", "redo"],
 ];
 
+const validateForm = (form: UserInputBlogType) => {
+  const formCompleted =
+    form.image !== "" &&
+    form.title !== "" &&
+    form.content !== "" &&
+    form.hashTag !== "";
+  return formCompleted;
+};
+
+const imageUploader = async (formData: UserInputBlogType): Promise<string> => {
+  if (typeof formData.image !== "string") {
+    const imageRes = await imageUpload(formData.image);
+    if (imageRes) {
+      return imageRes.public_id;
+    }
+  }
+  return "";
+};
+
 const BlogEditor = ({ id }: { id?: string }) => {
   const router = useRouter();
   const [formData, setFormData] = useState<UserInputBlogType>({
@@ -36,27 +52,29 @@ const BlogEditor = ({ id }: { id?: string }) => {
     content: "",
   });
   const [error, setError] = useState<string>("");
+  const [disableImage, setDisableImage] = useState<boolean>(false);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
-    const fileSize = getFileSize(selectedFile?.size);
-    console.log(fileSize);
-
+    // const fileSize = getFileSize(selectedFile?.size);
     if (selectedFile) {
       setFormData({ ...formData, image: selectedFile });
     }
   };
 
-  const handleFormChange = (key: keyof UserInputBlogType, value: string) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      [key]: value,
-    }));
+  const handleFormChange = useCallback(
+    (key: keyof UserInputBlogType, value: string) => {
+      setFormData((prevData) => ({
+        ...prevData,
+        [key]: value,
+      }));
 
-    if (error) {
-      setError("");
-    }
-  };
+      if (error) {
+        setError("");
+      }
+    },
+    [error]
+  );
 
   const getData = useCallback(async (id: string) => {
     const data = await getBlog(id);
@@ -71,44 +89,52 @@ const BlogEditor = ({ id }: { id?: string }) => {
     }
   }, []);
 
-  useEffect(() => {
-    console.log("setting data");
-
-    if (id) {
-      getData(id);
+  const deleteImageClient = useCallback(async () => {
+    const deleteRes = await deleteImage(formData.image);
+    if (deleteRes) {
+      handleFormChange("image", "");
+      setDisableImage(false);
     }
-  }, [getData, id]);
+  }, [formData.image, handleFormChange]);
 
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const image = await imageUploader(formData);
+    const isValid = validateForm({ ...formData, image });
+    if (!isValid) {
+      setError("All fields must be completed");
+      return;
+    }
+
+    let isDbUpdatedSuccess = false;
+
     if (id) {
-      const data = await updateBlog(id, {
-        title: formData.title,
-        hashTag: formData.hashTag,
-        content: formData.content,
-        image: formData.image,
+      const updateRes = await updateBlog(id, {
+        ...formData,
+        image,
       });
-      if (data) router.replace("/admin/blogs");
+      if (updateRes) {
+        isDbUpdatedSuccess = true;
+      }
     } else {
-      if (typeof formData.image !== "string") {
-        let publicId = "";
-        const imageRes = await imageUpload(formData.image);
-        if (imageRes) {
-          publicId = imageRes.public_id;
-          const data = await createBlog({ ...formData, image: publicId });
-          if (data) {
-            setFormData({
-              image: "",
-              title: "",
-              hashTag: "",
-              content: "",
-            });
-          }
-        }
+      const createRes = await createBlog({ ...formData, image });
+      if (createRes) {
+        isDbUpdatedSuccess = true;
       }
     }
+
+    if (isDbUpdatedSuccess) {
+      router.replace("/admin/blogs");
+    }
   };
+
+  useEffect(() => {
+    if (id) {
+      getData(id);
+      setDisableImage(true);
+    }
+  }, [getData, id]);
 
   return (
     <div className={style["form-wrapper"]}>
@@ -142,6 +168,20 @@ const BlogEditor = ({ id }: { id?: string }) => {
             {i.text}
           </Link>
         ))}
+        {disableImage && (
+          <button
+            className={style["submit-button"]}
+            onClick={deleteImageClient}
+            style={{
+              maxWidth: "max-content",
+              backgroundColor: "red",
+              color: "white",
+              padding: 5,
+            }}
+          >
+            Delete - and Upload New Image
+          </button>
+        )}
       </div>
       <form onSubmit={handleSubmit} className={style["blog-form"]}>
         <button className={style["submit-button"]} type="submit">
@@ -166,36 +206,16 @@ const BlogEditor = ({ id }: { id?: string }) => {
           onChange={(e) => handleFormChange("title", e.target.value)}
           required
         />
-        {id && formData.image ? (
-          <button
-            className={style["submit-button"]}
-            onClick={async () => {
-              const res = await deleteImage(formData.image);
-              if (res) {
-                handleFormChange("image", "");
-              }
-            }}
-            style={{
-              maxWidth: "max-content",
-              backgroundColor: "red",
-              color: "white",
-              padding: 5,
-            }}
-          >
-            Delete - and Upload New Image
-          </button>
-        ) : (
-          <>
-            {/* Image */}
-            <label htmlFor="image">Image</label>
-            <input
-              type="file"
-              id="image"
-              accept="image/png, image/jpeg, image/jpg"
-              onChange={handleFileChange}
-            />
-          </>
-        )}
+
+        {/* Image */}
+        <label htmlFor="image">Image</label>
+        <input
+          type="file"
+          id="image"
+          disabled={disableImage}
+          accept="image/png, image/jpeg, image/jpg"
+          onChange={handleFileChange}
+        />
         {/* hashTag */}
         <label>HashTag:</label>
         <input

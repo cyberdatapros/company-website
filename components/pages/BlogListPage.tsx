@@ -29,7 +29,14 @@ const Card = ({
     <Link href={`/blogs/${id}`} className={styles["blog-card"]}>
       <span className={styles["card-tag"]}>#{tag}</span>
       <div className={styles["blog-image-container"]}>
-        <Image src={image} alt={""} width={300} height={300} />
+        <Image
+          src={image}
+          alt={""}
+          width={300}
+          height={300}
+          placeholder={"blur"}
+          blurDataURL="https://res.cloudinary.com/dzqp0dnia/image/upload/v1706802729/place-holder-blog-image.jpg"
+        />
       </div>
       <div className={styles["card-text-wrapper"]}>
         <span className={styles["card-date"]}>{date}</span>
@@ -61,7 +68,7 @@ const BlogList = () => {
         <CardWrapper>
           {blogList.map((blog) => (
             <Card
-              key={blog.id}
+              key={`${blog.id}-${blog.createdAt}`}
               title={blog.title}
               date={getDateFormat(`${blog.createdAt}`)}
               image={`https://res.cloudinary.com/${cloudName}/image/upload/c_fill,h_600,w_600/f_auto/${blog.image}`}
