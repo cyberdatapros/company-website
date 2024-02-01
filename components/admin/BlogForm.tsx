@@ -213,7 +213,7 @@ const BlogEditor = ({ id }: { id?: string }) => {
           type="file"
           id="image"
           disabled={disableImage}
-          accept="image/png, image/jpeg, image/jpg"
+          accept="image/png"
           onChange={handleFileChange}
         />
         {/* hashTag */}

@@ -4,9 +4,10 @@ import { getDateFormat } from "@/utils/dataFormatter";
 import PageWrapper from "../wrappers/PageWrapper";
 import { Blog } from "@prisma/client";
 import Image from "next/image";
+import { getImageUrl } from "@/utils/cloudinaryHelper";
 
-const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_NAME;
 const BlogDetailPage = async ({ data }: { data: Blog }) => {
+  const blogImage = getImageUrl(data.image);
   return (
     <PageWrapper>
       <div className={styles["blog-detail-page"]}>
@@ -14,7 +15,7 @@ const BlogDetailPage = async ({ data }: { data: Blog }) => {
           <div className={styles["blog-detail-header-container"]}>
             <div className={styles["blog-detail-image"]}>
               <Image
-                src={`https://res.cloudinary.com/${cloudName}/image/upload/c_fill,h_600,w_600/${data.image}.jpg`}
+                src={blogImage}
                 width={350}
                 height={350}
                 alt="blog-image"

@@ -9,8 +9,7 @@ import Link from "next/link";
 import { getDateFormat } from "@/utils/dataFormatter";
 import LoadingContainer from "../shared/LoadingContainer";
 import CardWrapper from "../wrappers/CardWrapper";
-
-const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_NAME;
+import { getImageUrl } from "@/utils/cloudinaryHelper";
 
 const Card = ({
   title,
@@ -25,12 +24,14 @@ const Card = ({
   tag: string;
   id: string;
 }) => {
+  const cloudImage = getImageUrl(image);
+
   return (
     <Link href={`/blogs/${id}`} className={styles["blog-card"]}>
       <span className={styles["card-tag"]}>#{tag}</span>
       <div className={styles["blog-image-container"]}>
         <Image
-          src={image}
+          src={cloudImage}
           alt={""}
           width={300}
           height={300}
@@ -71,7 +72,7 @@ const BlogList = () => {
               key={`${blog.id}-${blog.createdAt}`}
               title={blog.title}
               date={getDateFormat(`${blog.createdAt}`)}
-              image={`https://res.cloudinary.com/${cloudName}/image/upload/c_fill,h_600,w_600/f_auto/${blog.image}`}
+              image={blog.image}
               tag={blog.hashTag}
               id={blog.id}
             />

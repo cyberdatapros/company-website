@@ -1,8 +1,13 @@
 const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_NAME;
+const uploadPreset = process.env.NEXT_PUBLIC_UPLOAD_PRESET;
 
 export type CloudinaryRes = {
   secure_url: string;
   public_id: string;
+};
+
+export const getImageUrl = (public_id: string): string => {
+  return `https://res.cloudinary.com/${cloudName}/image/upload/c_fill,h_600,w_600/f_auto/${public_id}`;
 };
 
 export const imageUpload = async (
@@ -10,7 +15,11 @@ export const imageUpload = async (
 ): Promise<CloudinaryRes | false> => {
   const formData = new FormData();
   formData.append("file", file);
-  formData.append("upload_preset", "blog-image");
+  if (uploadPreset && typeof uploadPreset !== "undefined") {
+    console.log(uploadPreset);
+
+    formData.append("upload_preset", uploadPreset);
+  }
 
   try {
     const response = await fetch(
