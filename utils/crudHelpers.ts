@@ -1,6 +1,8 @@
 import db from "@/lib/prisma";
 import { Blog } from "@prisma/client";
 
+const domain = process.env.NEXT_PUBLIC_DOMAIN_URL;
+
 export type BlogResponseType = {
   data: Array<{
     id: string;
@@ -21,7 +23,7 @@ export type UserInputBlogType = {
 
 export const getAllBlogs = async (): Promise<Blog[] | false> => {
   try {
-    const data = await fetch("/api/blog");
+    const data = await fetch(`${domain}/api/blog`);
     const blogs = await data.json();
     return blogs.data;
   } catch (error) {

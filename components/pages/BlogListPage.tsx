@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import PageWrapper from "@/components/wrappers/PageWrapper";
 import Image from "next/image";
@@ -48,20 +47,8 @@ const Card = ({
   );
 };
 
-const BlogList = () => {
-  const [blogList, setblogList] = useState<Blog[]>([]);
-
-  const getData = async () => {
-    const data = await getAllBlogs();
-    if (data) {
-      setblogList(data);
-    }
-  };
-  useEffect(() => {
-    getData();
-  }, []);
-
-  if (blogList.length === 0) return <LoadingContainer height={"100vh"} />;
+const BlogList = ({ blogList }: { blogList: Blog[] | false }) => {
+  if (!blogList) return <LoadingContainer height={"100vh"} />;
   return (
     <PageWrapper>
       <div className={styles["blogs-page-wrapper"]}>
