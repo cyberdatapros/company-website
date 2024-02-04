@@ -33,7 +33,9 @@
   max-width: 350px;
 }
 
-.carousel-next-button {
+.carousel-next-button,
+.carousel-prev-button {
+  display: none;
 }
 
 .carousel-prev-button {
@@ -42,4 +44,11 @@
 
 .slick-track {
   display: flex;
+}
+
+@media (min-width: 1124px) {
+  .carousel-next-button,
+  .carousel-prev-button {
+    display: block;
+  }
 }

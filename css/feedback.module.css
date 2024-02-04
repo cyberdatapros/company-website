@@ -7,8 +7,9 @@
 .feedback-text {
   color: white;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 .feedback-client-name {
