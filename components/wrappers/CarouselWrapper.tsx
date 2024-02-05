@@ -46,7 +46,7 @@ const CarouselWrapper = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setloading(false);
-    }, 2000);
+    }, 175);
 
     return () => {
       clearTimeout(timer);

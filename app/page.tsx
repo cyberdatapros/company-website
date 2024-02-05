@@ -15,7 +15,11 @@ const StaffCarousel = dynamic(
 
 export default function Home() {
   return (
-    <PageWrapper>
+    <PageWrapper
+      style={{
+        backgroundColor: "whiteSmoke",
+      }}
+    >
       <Jumbotron />
       <ServicesSectionDashboard />
       <ComplianceCarorusel />

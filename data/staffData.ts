@@ -107,7 +107,7 @@ export const staffArray: {
     social: "https://www.linkedin.com/in/amcmath10/",
     certs: [
       "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016399/certs/comptia-securityplus.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016399/certs/comptia-securityplus.png",
+      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016387/certs/one-privacy-professional.png",
     ],
   },
   {
@@ -117,7 +117,10 @@ export const staffArray: {
       "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970886/profile-pics/chris-z.svg",
     bio: `Chris has a diverse professional background, starting with 8 years in law enforcement, including roles with the US Army and a college police department in New York. Transitioning to the IT and cybersecurity field four years ago upon moving to Georgia, he made significant strides in his education and career. Chris earned his Associate degree in Information Technology and Networking from DeVry University and also completed Georgia Tech’s Cyber and Network Security Boot Camp. His academic achievements led him to a role as a Network and Security Analyst at a mail service and eDiscovery company, where he quickly advanced to a Senior Analyst position within six months. Furthering his career, Chris joined the Cyberdata Pros team as the fifth Data Privacy and Security Analyst. He holds a Security+ certification, and a OneTrust Privacy Certification, underscoring his proficiency in cybersecurity and data privacy. Outside of his professional life, Chris enjoys working out with his wife, spending time with family, gaming, and exploring new dining spots on weekends.`,
     social: "https://www.linkedin.com/in/christopher-zeh/",
-    certs: [],
+    certs: [
+      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016399/certs/comptia-securityplus.png",
+      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016387/certs/one-privacy-professional.png",
+    ],
   },
   {
     name: "leah eubanks",

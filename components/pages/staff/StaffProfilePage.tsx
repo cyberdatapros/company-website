@@ -7,11 +7,10 @@ import Link from "next/link";
 
 const transformCerts = (certs: string[]) => {
   const clength = certs.length;
+  const repeat = (arr: string[], n: number) => [].concat(...Array(n).fill(arr));
   switch (true) {
-    case clength > 3 && clength < 5:
-      return [...certs, ...certs, ...certs, ...certs];
-    case clength > 5 && clength < 8:
-      return [...certs, ...certs, ...certs];
+    case clength > 3 && clength < 8:
+      return repeat(certs, 4);
     case clength > 15:
       return certs;
     default:
