@@ -42,9 +42,7 @@ const ServiceSegmentPage = ({
               </Link>
             </div>
             <Image
-              src={
-                "https://res.cloudinary.com/dzqp0dnia/image/upload/v1706266861/1_hbghm3.svg"
-              }
+              src={pageSegement.badgeImageUrl}
               alt={""}
               width={50}
               height={50}

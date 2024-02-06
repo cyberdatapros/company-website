@@ -4,6 +4,7 @@ import styles from "@/css/nav.module.css";
 import { Menu } from "antd";
 import links from "./NavLinks";
 import Image from "next/image";
+import Link from "next/link";
 
 const DesktopNav = ({
   windowSize,
@@ -34,17 +35,19 @@ const DesktopNav = ({
         backgroundColor: "white",
       }}
     >
-      <Image
-        style={{
-          marginRight: 50,
-        }}
-        src={
-          "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705801083/cdp-logo-blue_jiknqi.png"
-        }
-        alt={"company logo"}
-        width={200}
-        height={100}
-      />
+      <Link href={"/"}>
+        <Image
+          style={{
+            marginRight: 50,
+          }}
+          src={
+            "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705801083/cdp-logo-blue_jiknqi.png"
+          }
+          alt={"company logo"}
+          width={180}
+          height={90}
+        />
+      </Link>
       {windowSize < 800 ? (
         <Image
           src="https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752836/icons/1_iolcif.svg"

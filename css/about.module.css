@@ -20,7 +20,7 @@
 .about-us-text-content {
   background-color: #f7f7f7;
   padding: 5% 5%;
-  max-width: 700px;
+  max-width: 775px;
 }
 
 .text-content-header {
@@ -62,9 +62,9 @@
 
 .text-content {
   color: #9a9aa0;
-  line-height: 1.8;
-  font-size: 18px;
-  font-family: 'Assistant', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* tablet */

@@ -51,4 +51,14 @@
   .carousel-prev-button {
     display: block;
   }
+
+  .carousel-next-button:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
+  .carousel-prev-button:hover {
+    transform: rotate(180deg) scale(1.07) !important;
+    cursor: pointer;
+  }
 }

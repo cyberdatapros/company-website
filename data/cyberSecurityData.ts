@@ -7,7 +7,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Virtual Chief Information <span>Security Officer</span> (vCISO)",
       url: "vciso",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247602/service-segment-badges/vciso-service.svg",
       shortHand: "VCISO",
       headLine: `Our experts have served in a broad range of industries for companies of various sizes and know how to align security strategies with your company’s challenges.`,
       textBlock: `<p>Your CISO plays a critical role in IT security strategy design, implementation, assessment, and mitigation of potential cyber-security risks.&nbsp;</p><p><br></p><p>Organizations can take advantage of this opportunity to utilize external expertise instead of maintaining a full-time, in-house position. As the expert in the latest cybersecurity and data privacy practices, responsibilities encompass staff training, leading client calls, conducting ongoing security and privacy audits to minimize gaps, and reviewing security questionnaires, client contracts, vendor paperwork, and other necessary documentation for business operations.</p>`,
@@ -33,7 +34,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Security <span>Audits</span>",
       url: "security-audits",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247602/service-segment-badges/secuirty-audits.svg",
       headLine:
         "Being fully compliant with data security regulations depends on your industry. It also depends on the types of sensitive data you're collecting and how that data is being handled.  The best way to handle incidents is to take measures to avoid them entirely, and these measures are directed by audits.",
       textBlock: `<p>The best way to prevent security incidents is through proactive measures guided by audits. Understanding the specific types of sensitive information your organization deals with is crucial. By conducting thorough audits, you can identify and address vulnerabilities, bolstering your overall security stance. These audits act as a proactive tool, offering insights to tackle security concerns before they become major issues.</p><p><br></p><p>Securing compliance with data security regulations involves a unique approach, taking into account the requirements of your industry and the nuances of handling sensitive data within your organization. The effectiveness of your security measures is closely tied to a comprehensive understanding of the types of sensitive information you deal with. To proactively manage potential security risks, conducting regular audits becomes a key practice.</p><p><br></p><p>Audits serve as a proactive checkpoint, allowing you to pinpoint vulnerabilities, assess your security standing, and implement preventive strategies. By delving into the specifics of your data processes through these audits, you empower your team to address and mitigate potential security threats before they escalate, fostering a resilient and secure environment for your organization.</p>`,
@@ -61,7 +63,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Penetration <span>Testing</span>",
       url: "penetration-testing",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247603/service-segment-badges/pen-testing-service.svg",
       headLine: `Penetration testing, often referred to as ethical hacking, is a manual approach by attempting to actively exploit any weaknesses that exist, in order to simulate what damage could be done by a real attacker. CyberData Pros has a very thorough approach to identifying exploits and weaknesses within the network, application, or business.`,
       textBlock: `The goal of a penetration test is to think like the “bad guys”, they are significantly more detailed and thus require substantially more time and effort. Because of the thorough and in-depth nature, a penetration test takes days to weeks to complete. Naturally, the cost associated with a penetration test is higher than a vulnerability scan, but it’s worth noting that a retest is frequently included in the cost. Additionally, they do not need to be conducted as frequently as vulnerability scanning; annually is the most common interval Reconnaissance`,
       dropDownItems: [
@@ -87,7 +90,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Vulnerability <span>Scanning</span>",
       url: "vulnerability-scan",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247604/service-segment-badges/vulnerability-scan-service.svg",
       headLine:
         "CyberData Pros uses our unique toolset to discover vulnerabilities within your network or application. Once we discover and document our findings, our team of certified experts will work with you to correct each vulnerability and make your business more secure.",
       textBlock: `<p>Vulnerability scanning is a vital process that utilizes automated tools to uncover and identify known vulnerabilities across an organization's devices, systems, and networks. This systematic approach actively seeks out potential weaknesses, allowing for the timely detection and remediation of security risks. Regular vulnerability scanning is a fundamental practice to ensure the security and stability of your organization's systems, reducing the chances of exploitation by malicious entities.</p><p><br></p><p>Regularly incorporating vulnerability scanning into your security practices is a foundational step to upholding the integrity of your organization's systems, diminishing the risk of exploitation by malicious entities. By systematically identifying vulnerabilities, you empower your team to proactively address and enhance the security posture of your digital infrastructure.</p>`,
@@ -117,7 +121,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Risk <span>Assessments</span>",
       url: "risk-assesments",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247605/service-segment-badges/risk-assessments-service.svg",
       headLine: `While risk assessments are phenomenal for newer businesses just getting started on building their cybersecurity infrastructure, they are also incredibly important for established security teams as well. CyberData Pros conducts regular risk assessments, allowing your company to track progress, quantify improvements made, and continue to identify new opportunities for improvement as you change and grow. 
 `,
       textBlock: `<p>Do you need that expensive IPS your IT manager asked for? Regular risk assessments allow your company to track progress, quantify improvements made, and continue to identify new opportunities for improvement as you change and grow.&nbsp;</p><p><br></p><p>This ensures that as new clients join, or new services are offered, you can maintain a comfortable footing within your risk management structure, as well as a potential competitive advantage over others in your space.&nbsp;</p><p><br></p><p>As the data privacy and security requirements for the biggest companies in the world continue to grow, due diligence and proactive tactics that show your organization is committed to handling their data responsibly and securely can make all the difference when they are deciding who gets that next big contract.</p>`,
@@ -143,7 +148,8 @@ export const cyberSecurityData: ServicePageType = {
     {
       title: "Tabletop <span>Excercises</span>",
       url: "tabletop-exercises",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247606/service-segment-badges/tabletop-service.svg",
       headLine: `CyberData Pros always custom design each tabletop exercise for our clients and make sure we also throw in some fun! We take extra time to understand your business and how the tabletop exercise can provide benefits to your organization.`,
       textBlock: `<p>A tabletop exercise is an informal, discussion-based session in which a team discusses their roles and responses during an emergency, walking through one or more example scenarios. The atmosphere is collegial and exploratory and is not meant to put participants in the mindset they’d have during a disaster. Tabletop exercises are used to prepare for all sorts of crises, but cybersecurity and disaster recovery are common areas of focus.</p><p>Tabletop exercises are designed to expose weaknesses in organizational structures and to make sure that people follow protocols and best practices. After all, the best-laid plans often fall apart when real-world humans have to implement them. While there are plenty of ways to test the technical aspects, a tabletop exercise tests the human and organizational factors that are just as important for cybersecurity.</p><p><br></p><p>Let CyberData Pros custom design and execute a tabletop exercise for your business today!</p>`,
       dropDownItems: [

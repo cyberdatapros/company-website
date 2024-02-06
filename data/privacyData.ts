@@ -7,7 +7,8 @@ export const privacyData: ServicePageType = {
     {
       title: "Privacy <span>Impact</span> Assessments",
       url: "privacy-impact-assessments",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247606/service-segment-badges/privacy-impact-assess-service.svg",
       headLine: `Explore the benefits of our Privacy Impact Assessment service, a powerful tool designed to help organizations identify, categorize, and address privacy risks within their data systems in alignment with applicable legislative standards. Our assessments aim to verify privacy compliance with organizational and legal requirements, identify existing privacy risks, and propose effective solutions for risk mitigation.`,
       textBlock: `<p>Bottom of the Description - A Privacy Impact Assessment is a tool that enables organizations to identify, categorize, and ultimately remediate privacy risks present in their data systems per relevant legislative standards. The objectives of these assessments are a few: to verify the data system’s privacy conformity with organizational and legal requirements, to determine the privacy risks present in the data system, and to evaluate solutions to mitigate identified risks.&nbsp;</p><p><br></p><p>Understanding what constitutes a PIA and its goals, a natural follow-up question would be who needs one. The necessity of one largely depends on the requirements of whatever regulations your business must abide by – different frameworks require these assessments at different stages of data handling. Odds are, however, that if you are bound to privacy legislation and handle customer Personally Identifiable Information (PII) you will at minimum be required to conduct a PIA when said data is newly processed or sold. Additionally, whenever significant changes/additions are made to the data system’s structure or its processes, then a PIA is typically highly advised, if not required outright.</p>`,
       dropDownItems: [
@@ -32,7 +33,8 @@ export const privacyData: ServicePageType = {
     {
       title: "Privacy <span>Policies</span>",
       url: "privacy-policies",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247607/service-segment-badges/privacy-policies-service.svg",
       headLine: `A privacy policy should be specifically crafted for your company. CyberData Pros has worked with hundreds of clients to help generate these policies. Let us customize a Privacy Policy that fits your business.`,
       textBlock: `<p>Privacy Policy is a legal document that details the information you collect on users, the purpose and methods of that collection, and how that information will be processed or sold. What constitutes “personal” information varies by regulation, but a nice rule-of-thumb is that if the data can be used to personally identify an individual (things like names, addresses, emails, or age) it’s safe to consider it personal.</p><p><br></p><p>In terms of purpose, these policies primarily exist to protect customer privacy rights and to encourage transparency and consumer trust in businesses. Past these conceptual benefits lies one critical, tangible one for businesses – reducing legal liability in an increasingly privacy-concerned world. Crucial in seeing those benefits, however, is the comprehensiveness of the policy.&nbsp;A privacy policy should be specifically crafted for your company. It should be an intricate and intentional guide for how you agree to not only protect your clients but ultimately how you will protect your company as well.</p>`,
       dropDownItems: [
@@ -57,7 +59,8 @@ export const privacyData: ServicePageType = {
     {
       title: "Cookie <span>Compliance</span>",
       url: "cookie-compliance",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247610/service-segment-badges/cookie-compliance-service.svg",
       headLine: `Maintaining cookie compliance is vital for businesses to respect user privacy and meet regulatory standards. CyberData Pros specializes in providing practical guidance, helping businesses implement clear and user-friendly cookie policies. Our expertise minimizes legal risks and establishes trust with customers.`,
       textBlock: ``,
       dropDownItems: [],
