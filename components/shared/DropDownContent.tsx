@@ -34,7 +34,7 @@ const DropDownContent = ({
         />
       </button>
       {isOpen && (
-        <div
+        <p
           className={styles["dropdown-content"]}
           dangerouslySetInnerHTML={{ __html: [downText] }}
         />

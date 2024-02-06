@@ -84,7 +84,7 @@
   font-weight: 400;
   padding: 5px 10px;
   color: white;
-  background-color: #b58500;
+  background-color: var(--brand-blue);
   border-radius: 10px;
 }
 
@@ -101,6 +101,10 @@
 
   .faq-contact-message {
     max-width: 350px;
+  }
+
+  .faq-contact-button {
+    background-color: var(--brand-gold);
   }
 }
 

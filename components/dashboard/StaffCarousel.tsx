@@ -97,7 +97,7 @@ const StaffCarousel = () => {
       <div className={styles["staff-container"]}>
         <div className={styles["carousel-headers-container"]}>
           <p className={styles["staff-carousel-header"]}>
-            Passionate Professionals Providing{" "}
+            Professionals Providing{" "}
             <strong
               style={{
                 color: "#001a5",

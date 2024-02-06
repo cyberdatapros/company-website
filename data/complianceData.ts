@@ -7,7 +7,8 @@ export const complianceData: ServicePageType = {
     {
       title: "ISO <span>27001</span>",
       url: "iso-27001",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247594/service-segment-badges/iso-27001-service.svg",
       headLine:
         "CyberData Pros has successfully helped businesses – some of whom had not even started their compliance journey – achieve certification. We have a 100% audit success rate with all of our clients. Demonstrate That Your Business Takes Cybersecurity and Data Privacy Seriously",
       textBlock: `<p>Compliance frameworks can be an effective way to increase customer confidence and reduce your overall costs and risks of data breaches or incidents.</p><p>Win RFPs and stand out from your competitors.</p><p><br></p><p>Attaining ISO 27001 certification proves to be a valuable asset for attracting and retaining clients, especially those on an international scale. This certification guarantees the confidentiality, availability, and integrity of data.</p><br></p><ul><li>Win RFPs and stand out from your competitors.</li><li>Helps ensure that data is kept confidential, available and unaltered.</li><li>Achieving certification can be beneficial for organizations that operate globally to commit to international best practices.</li></ul>.
@@ -39,9 +40,10 @@ export const complianceData: ServicePageType = {
     {
       title: "ISO <span>42001</span>",
       url: "iso-42001",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707252811/service-segment-badges/iso-42001-service.svg",
       headLine:
-        "ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization. CyberData Pros can help your business achieve this certification to ensure confidence and recognition in your business’s AI systems.",
+        "The ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization. CyberData Pros can help your business achieve this certification to ensure confidence and recognition in your business’s AI systems.",
       textBlock: `<p>Artificial Intelligence (AI) is shaking the industry with its innovation and boundless potential for integration into business systems. Many questions arise with the introduction of AI: what is AI capable of, where is AI taking us, and how can we control AI use? Global and national leaders are striving toward trustworthy and responsible AI regulations with respect to humans at its core. ISO 42001 was introduced as the first and only global standard for AI management. ISO 42001 provides the framework for organizations that are thinking about or currently using AI in any capacity.</p><br/><p>This framework promotes governance, responsible use, fairness, and security in a business’s AI implementation. ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization. </p>`,
       dropDownItems: [
         {
@@ -69,7 +71,8 @@ export const complianceData: ServicePageType = {
     {
       title: "ISO <span>27701</span>",
       url: "iso-27701",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247595/service-segment-badges/iso-27701-service.svg",
       headLine: `CyberData Pros has a 100% audit success rate with all of our clients. Demonstrate That Your Business Takes Cybersecurity and Data Privacy Seriously. This service focuses on implementing and managing a Privacy Information Management System (PIMS) to enhance privacy practices and protect personal information.`,
       textBlock: ``,
       dropDownItems: [],
@@ -78,7 +81,8 @@ export const complianceData: ServicePageType = {
       title:
         "Cybersecurity <span>Maturity</span> Model <span>Certification</span> (CMMC)",
       url: "cmmc",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707248309/service-segment-badges/cmmc-service.svg",
       shortHand: "CMMC",
       headLine: `Obtaining the (CMMC) certificate is crucial for businesses to secure sensitive information and comply with government contracts. At CyberData Pros, we specialize in guiding businesses through the CMMC certification process, ensuring they meet the necessary standards and secure sensitive data effectively.`,
       textBlock: `<p>CMMC is a program made by the US Department of Defense. This certification is designed to enforce protection of unclassified information that is shared by the Department with its contractors and subcontractors.</p><br /><p>By working with the government, contractors handle sensitive information that is valuable to cyber attackers.CyberData Pros helps businesses that are trying to acquire government contracts with their CMMC. While CMMC is not required to work with the government at this time, it is expected to be required by government contractors and subcontractors in the next few years.</p>`,
@@ -113,7 +117,8 @@ export const complianceData: ServicePageType = {
       title:
         "Health Insurance <span>Porability</span> and <span>Accountability</span> Act",
       url: "hipaa",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247597/service-segment-badges/hipaa-service.svg",
       shortHand: "HIPAA",
       headLine: `HIPAA regulations are continuously evolving and penalties can be costly. CyberData Pros will review your processes, perform audits, and train your team to ensure your business complies with all HIPAA guidelines.`,
       textBlock: `<p>HIPAA is a significant U.S. federal law established in 1996 to ensure the privacy and security of individuals' health information. It consists of key components such as the Privacy Rule, focusing on protecting identifiable health data, and the Security Rule, which sets standards for protecting electronic health information.&nbsp;</p><p><br></p><p>HIPAA applies to healthcare providers, plans, and clearinghouses, along with their business associates. The law aims to balance the exchange of necessary healthcare information with the protection of sensitive data, and compliance is crucial to avoid legal consequences and maintain patient trust.</p><p><br></p><p>Although the path to full HIPAA compliance can seem like an imposing process in terms of time and resources, it’s important to remember that the effort fulfills more than just meeting a regulatory requirement – it’s also about building trust with patients and clients. When an organization maintains compliance with exacting standards like HIPAA, it sends a message that it values and protects patients’ privacy and personal information. This trust can translate into stronger relationships with patients, improved reputation, and ultimately, better business outcomes.</p>`,
@@ -143,7 +148,9 @@ export const complianceData: ServicePageType = {
     {
       title: "System and <span>Organization</span> Controls",
       url: "soc",
-      badgeImageUrl: "",
+      shortHand: "SOC",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247595/service-segment-badges/soc-service.svg",
       headLine: `SOC reports are intended to increase customer confidence, trust and can differentiate your business from your competitors. CyberData Pros has prepared hundreds of clients to sit for their SOC Report.`,
       textBlock: `Compliance frameworks like SOC (System and Organization Controls) can help your business to implement best practices that demonstrate your commitment to data privacy and to operating in an ethical and compliant manner. There are three common types of SOC compliance with different focuses/controls. Each of the three types outlines the various processes and systems in place to protect data. All three are intended to increase customer confidence and trust and can differentiate your business from your competitors. `,
       dropDownItems: [
@@ -164,7 +171,8 @@ export const complianceData: ServicePageType = {
     {
       title: "FED<span>RAMP</span>",
       url: "fed-ramp",
-      badgeImageUrl: "",
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/fed-ramp-service.svg",
       headLine: `CyberData Pros can help you to achieve FedRAMP Ready status and prepare you to receive an Authorization to Operate (ATO) if you don’t already have an agency sponsor. Having FedRAMP Ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP Authorized CSO’s.`,
       textBlock: `<p>FedRAMP is a government wide compliance program for cloud services. The Federal Risk and Authorization Management Program (FedRAMP) was founded in 2011 to standardize security requirements and processes for Cloud Service Offerings (CSO) across the federal government. Any Cloud Service Provider who wishes to do business with the United States Federal government will need to get their CSOs FedRAMP authorized, because cloud service that holds federal data must be FedRAMP authorized.</p><br /><p>Having FedRAMP Ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP Authorized CSO’s. FedRAMP Ready can even prioritize your CSO for authorization by the Joint Authorization Board (JAB).</p>`,
       dropDownItems: [
@@ -201,8 +209,9 @@ export const complianceData: ServicePageType = {
     {
       title: "PCI",
       url: "pci",
-      badgeImageUrl: "",
-      headLine: `SOC reports are intended to increase customer confidence, trust and can differentiate your business from your competitors. CyberData Pros has prepared hundreds of clients to sit for their SOC Report.`,
+      badgeImageUrl:
+        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/pci-service.svg",
+      headLine: `Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData Pros can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.`,
       textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><p><br></p><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><p><br></p><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and reputational damage. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
 `,
       dropDownItems: [],

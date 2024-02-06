@@ -74,11 +74,12 @@ const Footer = () => {
                 style={{
                   marginRight: 10,
                 }}
+                target="_blank"
                 href={url}
               >
                 <Image
                   src={`${image}`}
-                  alt={"company logo"}
+                  alt={"social link"}
                   width={35}
                   height={35}
                 />

@@ -84,3 +84,9 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width: 1124px) {
+  .social-icons a:hover {
+    transform: scale(1.07);
+  }
+}
