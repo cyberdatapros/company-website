@@ -1,0 +1,108 @@
+.wrapper {
+  min-height: 8vh;
+}
+
+.header-container {
+  padding: 5% 0px;
+  min-height: 500px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(21, 21, 21, 0.73)
+    ),
+    url("https://onlinedegrees.sandiego.edu/wp-content/uploads/2018/03/top-industries-for-cybsecurity-professionals.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container > div {
+  margin-top: 50px;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.case-study-text {
+  background-color: var(--brand-gold);
+  padding: 5px 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.wrapper section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10% 5%;
+}
+
+.wrapper section > div {
+  /* max-width: 100%; */
+}
+
+.wrapper section div > h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--brand-gold);
+}
+
+.wrapper section div > p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.problem,
+.result {
+  justify-content: flex-start;
+  background: #fafafa;
+}
+
+.solution {
+  justify-content: flex-end;
+  background-color: white;
+}
+
+section.testimonial {
+  background-color: var(--brand-blue);
+  color: white;
+}
+
+section.testimonial div > p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+section.testimonial > div > h3 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper section > div {
+    max-width: 50%;
+  }
+
+  section.testimonial > div {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper section {
+    padding: 10%;
+  }
+
+  section.testimonial {
+    padding: 5%;
+  }
+}
