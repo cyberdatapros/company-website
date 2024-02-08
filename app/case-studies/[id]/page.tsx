@@ -1,7 +1,8 @@
+import CaseStudyDetailpage from "@/components/pages/case-studies/CaseStudyDetailpage";
 import React from "react";
 
-const page = () => {
-  return <div>page</div>;
+const page = ({ params }: { params: { id: string } }) => {
+  return <CaseStudyDetailpage studyStr={params.id} />;
 };
 
 export default page;
