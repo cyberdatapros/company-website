@@ -9,11 +9,11 @@ export const POST = async (request: Request) => {
       to: "jenner.e.thomas@gmail.com",
       subject: `Contact Request from ${data.name}`,
       html: `
-            <p>Name: ${data.name} </p>
+            <p>Name: ${data.name || ""} </p>
             <p>Email: ${data.email} </p>
-            <p>Company: ${data.company} </p>
-            <p>Email: ${data.phone} </p>
-            <p>Message: ${data.message} </p>
+            <p>Company: ${data.company || ""} </p>
+            <p>Phone: ${data.phone || ""} </p>
+            <p>Message: ${data.message || ""} </p>
             `,
     });
 

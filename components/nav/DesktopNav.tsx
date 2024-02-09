@@ -63,6 +63,7 @@ const DesktopNav = ({
           style={{
             background: "transparent",
             listStyleType: "none",
+            width: "100%",
           }}
           mode="horizontal"
           items={links}

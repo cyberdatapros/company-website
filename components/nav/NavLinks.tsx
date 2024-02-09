@@ -71,12 +71,14 @@ const links: MenuItem[] = [
       "case-stud",
       <></>
     ),
-    getItem(
-      <a href="http://CyberDataproslearning.com">Training</a>,
-      "train",
-      <></>
-    ),
+    getItem(<Link href={`/resources`}>Resources</Link>, "re-sus", <></>),
   ]),
+  getItem(
+    <a href="http://CyberDataproslearning.com">Training</a>,
+    "train",
+    <></>,
+    []
+  ),
   getItem(
     <a
       href="/contact"
@@ -90,7 +92,8 @@ const links: MenuItem[] = [
       Contact
     </a>,
     "contact",
-    <></>
+    <></>,
+    []
   ),
 ];
 
