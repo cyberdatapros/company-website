@@ -1,9 +1,9 @@
 export type formmDataType = {
-  name: string;
+  name?: string;
   email: string;
-  message: string;
-  phone: string;
-  company: string;
+  message?: string;
+  phone?: string;
+  company?: string;
 };
 
 export const sendMail = async (formData: formmDataType): Promise<Boolean> => {
