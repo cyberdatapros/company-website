@@ -133,6 +133,19 @@
   display: flex;
 }
 
+.carousel-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 14px;
+}
+
+.carousel-button-container button {
+  border: none;
+  background: none;
+}
+
 .carousel-next-button,
 .carousel-prev-button {
   display: none;

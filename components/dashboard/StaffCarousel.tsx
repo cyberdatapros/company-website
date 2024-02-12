@@ -10,9 +10,9 @@ import Link from "next/link";
 
 const getNumPerGroup = (width: number) => {
   switch (true) {
-    case width > 980:
-      return width * 0.6;
-    case width > 1450:
+    case width > 980 && width < 1350:
+      return width * 0.55;
+    case width > 1350:
       return 800;
     default:
       return width;
@@ -143,42 +143,41 @@ const StaffCarousel = () => {
             </Link>
           ))}
         </Carousel>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: 50,
-            gap: 14,
-          }}
-        >
-          <Image
+        <div className={styles["carousel-button-container"]}>
+          <button
             onClick={() => {
               ref.current?.prev();
             }}
-            className={styles["carousel-prev-button"]}
-            src={
-              "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752945/icons/5_mvelzq.svg"
-            }
-            style={{
-              transform: "rotate(180deg)",
-            }}
-            width={35}
-            height={35}
-            alt={"arrow"}
-          />
-          <Image
+          >
+            <Image
+              className={styles["carousel-prev-button"]}
+              src={
+                "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752945/icons/5_mvelzq.svg"
+              }
+              style={{
+                transform: "rotate(180deg)",
+              }}
+              width={35}
+              height={35}
+              alt={"arrow"}
+            />
+          </button>
+
+          <button
             onClick={() => {
               ref.current?.next();
             }}
-            className={styles["carousel-next-button"]}
-            src={
-              "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752945/icons/5_mvelzq.svg"
-            }
-            width={35}
-            height={35}
-            alt={"arrow"}
-          />
+          >
+            <Image
+              className={styles["carousel-next-button"]}
+              src={
+                "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705752945/icons/5_mvelzq.svg"
+              }
+              width={35}
+              height={35}
+              alt={"arrow"}
+            />
+          </button>
         </div>
       </div>
       <Image

@@ -1,16 +1,14 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Poppins, DM_Sans } from "next/font/google";
 import { Keywords } from "@/data/seoKeywords";
+import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: "500" });
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "500", "700"] });
-
-const isProduciton = process.env.NODE_ENV === "production";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +63,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.className} ${dmSans.className}`}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
       <Script
         suppressHydrationWarning
         type="text/javascript"
