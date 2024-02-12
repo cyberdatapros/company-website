@@ -70,7 +70,6 @@ const Footer = () => {
             {socialIcons.map(({ url, image }, index) => (
               <Link
                 key={index}
-                rel="nofollow"
                 style={{
                   marginRight: 10,
                 }}

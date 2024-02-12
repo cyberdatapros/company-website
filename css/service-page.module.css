@@ -42,6 +42,13 @@
   text-transform: capitalize;
 }
 
+.heading span {
+  display: block;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
 .text-container div {
   flex: 1;
 }

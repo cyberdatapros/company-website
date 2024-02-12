@@ -71,7 +71,7 @@ export const consultingData: ServicePageType = {
       url: "cloud-infrastructure",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247608/service-segment-badges/cloud-infrast-service.svg",
-      headLine: `<p>As businesses continue to move more into the cloud, the associated risks keep growing and the costs keep climbing. CyberData Pros can help you maintain a clean, secure, and cost effective environment with our industry leading Cloud Infrastructure</p>`,
+      headLine: `As businesses continue to move more into the cloud, the associated risks keep growing and the costs keep climbing. CyberData Pros can help you maintain a clean, secure, and cost effective environment with our industry leading Cloud Infrastructure`,
       textBlock: `<p>We can identify gaps and weaknesses in the security and configurations of your cloud environment, analyze the design of your environment to identify potential cost savings and increase efficiency, as well provide critical insights on cloud-native risks to your business. The complexity of managing a full cloud infrastructure can be daunting, but CyberData Pros can help you stay organized, cost-effective, and secure.</p>`,
       dropDownItems: [
         {
