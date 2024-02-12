@@ -81,7 +81,7 @@
 }
 
 .staff-title {
-  font-size: 10px;
+  font-size: 10.5px;
   text-transform: capitalize;
   font-weight: 300;
   max-width: 100px;
@@ -131,6 +131,19 @@
 
 .slick-track {
   display: flex;
+}
+
+.carousel-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 14px;
+}
+
+.carousel-button-container button {
+  border: none;
+  background: none;
 }
 
 .carousel-next-button,

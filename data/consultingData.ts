@@ -5,7 +5,7 @@ export const consultingData: ServicePageType = {
     "<p>There are multiple areas of your business to cover in order to ensure data privacy and security coverage. Many of these areas start with updated documentation. It is not only important to have this kind of documentation, but to fully abide by what is spelled out. This is where CyberData Pros makes the largest impact on your business. With our different consulting services, we can help make sure your business is safe and secure!</p><p><br></p><p>While information security documentation is essential to your data and operation, we’ve found that far too often the documentation is incomplete or even worse, totally missing. While this is tragic, it’s also entirely avoidable by teaming up with professionals who can walk you through the documentation process and make sure all your bases are covered.</p><p><br></p><p>Successful documentation not only makes data easily accessible, it also provides a variety of user entry points, assists new users in better understanding processes, and simplifies the product, all while helping trim support costs. Beyond this, the presence of documentation makes it easier to track all phases of an application, bringing in innovative ideas to help better your software product.</p><p><br></p>",
   segments: [
     {
-      title: "Desaster <span>Recovery</span> Plan",
+      title: "Disaster <span>Recovery</span> Plan",
       url: "desaster-recovery",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247610/service-segment-badges/disaster-recover-plan-servicce.svg",
