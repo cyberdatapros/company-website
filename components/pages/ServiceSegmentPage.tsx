@@ -32,10 +32,12 @@ const ServiceSegmentPage = ({
                 className={style["hero-content-title"]}
                 dangerouslySetInnerHTML={{ __html: pageSegement.title }}
               />
-              <p className={style["segment-descripton"]}>
-                {pageSegement.headLine}
-              </p>
-              <Link rel="nofollow" href={"/contact"}>
+              <p
+                className={style["segment-descripton"]}
+                dangerouslySetInnerHTML={{ __html: pageSegement.headLine }}
+              />
+
+              <Link href={"/contact"}>
                 <button className={style["contact-button"]}>
                   Contact a pro
                 </button>

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://cyberdatapros.com",
+  },
   openGraph: {
     title: "CyberData Pros - Data Privacy & Security made simple",
     description:
@@ -31,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Cyberdata Pros",
     images: [
       {
-        url: "",
+        url: "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707762245/social-image-og_kpaxgw.png",
       },
     ],
     locale: "en_US",
@@ -40,6 +43,18 @@ export const metadata: Metadata = {
   authors: {
     name: "CyberData Pros",
     url: "https://cyberdatapros.com",
+  },
+  icons: {
+    apple: [
+      {
+        url: "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707762245/social-image-og_kpaxgw.png",
+      },
+      {
+        url: "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707762245/social-image-og_kpaxgw.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
 };
 

@@ -45,10 +45,6 @@
   padding: 10% 5%;
 }
 
-.wrapper section > div {
-  /* max-width: 100%; */
-}
-
 .wrapper section div > h3 {
   font-size: 32px;
   font-weight: 700;
@@ -58,7 +54,8 @@
 
 .wrapper section div > p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .problem,
@@ -89,7 +86,7 @@ section.testimonial > div > h3 {
 
 @media (min-width: 768px) {
   .wrapper section > div {
-    max-width: 50%;
+    max-width: 60%;
   }
 
   section.testimonial > div {

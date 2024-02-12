@@ -13,7 +13,9 @@ const ServicePage = async ({ serviceKey }: { serviceKey: string }) => {
       <div className={styles["content-wrapper"]}>
         <div className={styles["text-container"]}>
           <div>
-            <h1 className={styles["heading"]}>{serviceTitle}</h1>
+            <h1 className={styles["heading"]}>
+              {serviceTitle} <span>Data Solutions by Cyber Data pros</span>
+            </h1>
             <div dangerouslySetInnerHTML={{ __html: service.description }} />
             <button></button>
           </div>
