@@ -19,6 +19,7 @@ export type UserInputBlogType = {
   title: string;
   hashTag: string;
   content: string;
+  createdAt: Date;
 };
 
 export const getAllBlogs = async (): Promise<Blog[] | false> => {

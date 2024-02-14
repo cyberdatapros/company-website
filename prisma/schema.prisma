@@ -20,3 +20,14 @@ model Blog {
   content String
   image String
 }
+
+model CaseStudy {
+  id String @id @default(uuid())
+  name String
+  image String
+  problem String
+  solution String
+  result String
+  feedbackContent String
+  feedbackName String
+}

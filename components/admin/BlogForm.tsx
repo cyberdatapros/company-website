@@ -6,10 +6,11 @@ import {
   updateBlog,
 } from "@/utils/crudHelpers";
 import React, { useCallback, useEffect, useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { useRouter } from "next/navigation";
-import { getFileSize } from "@/utils/getFileSize";
 import style from "@/css/blog-form.module.css";
 import Link from "next/link";
 import { deleteImage, imageUpload } from "@/utils/cloudinaryHelper";
@@ -26,15 +27,19 @@ const quillToolBar = [
 
 const validateForm = (form: UserInputBlogType) => {
   const formCompleted =
-    form.image !== "" &&
-    form.title !== "" &&
-    form.content !== "" &&
-    form.hashTag !== "";
+    (form.image !== "" &&
+      form.title !== "" &&
+      form.content !== "" &&
+      form.hashTag !== "" &&
+      form.createdAt !== null) ||
+    "";
   return formCompleted;
 };
 
 const imageUploader = async (formData: UserInputBlogType): Promise<string> => {
-  if (typeof formData.image !== "string") {
+  if (typeof formData.image === "string") {
+    return formData.image;
+  } else {
     const imageRes = await imageUpload(formData.image);
     if (imageRes) {
       return imageRes.public_id;
@@ -50,20 +55,20 @@ const BlogEditor = ({ id }: { id?: string }) => {
     title: "",
     hashTag: "",
     content: "",
+    createdAt: new Date(),
   });
   const [error, setError] = useState<string>("");
   const [disableImage, setDisableImage] = useState<boolean>(false);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
-    // const fileSize = getFileSize(selectedFile?.size);
     if (selectedFile) {
       setFormData({ ...formData, image: selectedFile });
     }
   };
 
   const handleFormChange = useCallback(
-    (key: keyof UserInputBlogType, value: string) => {
+    (key: keyof UserInputBlogType, value: string | Date | null) => {
       setFormData((prevData) => ({
         ...prevData,
         [key]: value,
@@ -79,12 +84,13 @@ const BlogEditor = ({ id }: { id?: string }) => {
   const getData = useCallback(async (id: string) => {
     const data = await getBlog(id);
     if (data) {
-      const { title, hashTag, content, image } = data;
+      const { title, hashTag, content, image, createdAt } = data;
       setFormData({
         title,
         hashTag,
         content,
         image: image,
+        createdAt,
       });
     }
   }, []);
@@ -101,7 +107,7 @@ const BlogEditor = ({ id }: { id?: string }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const isUpdate = typeof id !== "undefined";
-    const image = isUpdate ? formData.image : await imageUploader(formData);
+    const image = await imageUploader(formData);
     const isValid = validateForm({ ...formData, image });
     if (!isValid) {
       setError("All fields must be completed");
@@ -217,6 +223,13 @@ const BlogEditor = ({ id }: { id?: string }) => {
           accept="image/png"
           onChange={handleFileChange}
         />
+        {/* Creation Date */}
+        <label>Created At</label>
+        <DatePicker
+          selected={formData.createdAt}
+          onChange={(date) => handleFormChange("createdAt", date)}
+        />
+
         {/* hashTag */}
         <label>HashTag:</label>
         <input
