@@ -73,9 +73,38 @@ export const complianceData: ServicePageType = {
       url: "iso-27701",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247595/service-segment-badges/iso-27701-service.svg",
-      headLine: `CyberData Pros has a 100% audit success rate with all of our clients. Demonstrate That Your Business Takes Cybersecurity and Data Privacy Seriously. This service focuses on implementing and managing a Privacy Information Management System (PIMS) to enhance privacy practices and protect personal information.`,
-      textBlock: ``,
-      dropDownItems: [],
+      headLine: `We have a 100% audit success rate with all of our clients. Demonstrate that Your business takes Cybersecurity and Data Privacy seriously. This service focuses on implementing and managing a Privacy Information Management System (PIMS) to enhance privacy practices and protect personal information.`,
+      textBlock: `<p>ISO/IEC 27701, known as the Privacy Information Management System (PIMS), is an international standard that provides a framework for organizations to establish, implement, maintain, and continually improve a robust and effective privacy management system. This standard builds upon the foundation of ISO/IEC 27001, the widely recognized information security management standard, and extends its principles to specifically address privacy concerns.</p><br/><p>ISO 27701 outlines guidelines and best practices for managing personally identifiable information (PII) in a privacy-centric manner. It assists organizations in demonstrating their commitment to privacy, fostering a transparent approach to handling personal information. The standard offers a systematic and risk-based approach to privacy management, encompassing aspects such as data protection policies, legal compliance, consent management, and ongoing monitoring and improvement.<p><br><p>By aligning with ISO 27701, organizations can enhance their privacy posture, build trust with stakeholders, and navigate the complex landscape of privacy regulations and expectations. This standard is particularly valuable for entities seeking to demonstrate compliance with various privacy laws, standards, and frameworks globally.</p>`,
+      dropDownItems: [
+        {
+          title: "Planning",
+          info: `Identify project stakeholders and key contacts & develop communication plan. Define program priorities and system scope and applicability. Establish and define what success looks like. Determine organization's role as either a Controller, Processor, or both`,
+        },
+        {
+          title: "Gap Assessment",
+          info: "Conduct communication programme to suppliers and other stakeholders. Define roles and responsibilities. Identify applicable privacy legislation. Appoint representative(s) in other countries & Data Protection Officer (if required). Conduct competence and training needs assessment. Perform privacy-related training, information security awareness training and familiarization",
+        },
+        {
+          title: "PII Mapping",
+          info: `Conduct initial PII information gathering exercise & perform audit of PII by business area. Identify lawful basis for processing PII in each case. Conduct legitimate interest assessments where required`,
+        },
+        {
+          title: "Policies, Notices, and Rights",
+          info: `Create and implement PII principal request procedures & define PII retention and protection policy. Create or amend existing privacy notices. Develop and implement PIMS extensions to the existing ISMS. Review and amend consent methods and procedures. Also update contracts with controllers to be compliant. Address employee confidentiality requirements`,
+        },
+        {
+          title: "Privacy Impact Assessment",
+          info: `Define privacy impact assessment process & perform initial PIA. Identify international transfers of PII. Assess legality of existing international transfers`,
+        },
+        {
+          title: "PII Breach Management ",
+          info: `Create information security incident management & PII breach notification procedure. Conduct information security incident management training. Test incident management and breach notification procedures`,
+        },
+        {
+          title: "Continuous Improvement and Ongoing Maintenance",
+          info: `Resolve any nonconformities identified during the audit and achieve certification. Ensure planning and adherence to all recurring requirements for Year 2 and Year 3. Work alongside staff to continue providing ongoing guidance, direction, and support in the above capacities through each surveillance audit`,
+        },
+      ],
     },
     {
       title:
@@ -169,7 +198,7 @@ export const complianceData: ServicePageType = {
       ],
     },
     {
-      title: "FED<span>RAMP</span>",
+      title: "Fed<span>RAMP</span>",
       url: "fed-ramp",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/fed-ramp-service.svg",
@@ -212,9 +241,26 @@ export const complianceData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/pci-service.svg",
       headLine: `Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData Pros can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.`,
-      textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><p><br></p><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><p><br></p><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and reputational damage. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
+      textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><br><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><br/><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and reputational damage. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
 `,
-      dropDownItems: [],
+      dropDownItems: [
+        {
+          title: "Determine your PCI level",
+          info: "Identify your merchant or service provider level based on transaction volume and interaction with cardholder data.",
+        },
+        {
+          title: "Understand PCI standards",
+          info: "Familiarize yourself with the 12 key steps of PCI DSS compliance, covering areas such as data protection, access control, and security policies.",
+        },
+        {
+          title: "Assess current compliance status",
+          info: "Evaluate which PCI standards your business already meets and identify areas needing improvement.",
+        },
+        {
+          title: "Address remaining compliance tasks",
+          info: "Use your assessment to create a to-do list for achieving PCI compliance, including tasks like vulnerability scanning and system updates.",
+        },
+      ],
     },
   ],
 };

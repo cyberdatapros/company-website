@@ -1,8 +1,14 @@
 import db from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async (request: NextRequest) => {
-  const data = await db.blog.findMany({});
+export const GET = async (
+  request: NextRequest,
+  { params }: { params: { skip: string } }
+) => {
+  const data = await db.blog.findMany({
+    skip: +params.skip || 0,
+    take: 6,
+  });
   return NextResponse.json({ data });
 };
 
