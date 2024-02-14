@@ -26,12 +26,12 @@ const ServicePage = async ({ serviceKey }: { serviceKey: string }) => {
             </p>
             <ul className={styles["certs-list"]}>
               {service.segments.map((segement) => {
-                const { title, url } = segement;
+                const { title, url, shortHand } = segement;
                 return (
                   <li key={title}>
                     <Link
                       href={`/services/${serviceTitle}/${url}`}
-                      dangerouslySetInnerHTML={{ __html: title }}
+                      dangerouslySetInnerHTML={{ __html: shortHand || title }}
                     />
                   </li>
                 );

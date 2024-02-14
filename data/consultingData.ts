@@ -2,7 +2,7 @@ import { ServicePageType } from "./servicesPageData";
 
 export const consultingData: ServicePageType = {
   description:
-    "<p>There are multiple areas of your business to cover in order to ensure data privacy and security coverage. Many of these areas start with updated documentation. It is not only important to have this kind of documentation, but to fully abide by what is spelled out. This is where CyberData Pros makes the largest impact on your business. With our different consulting services, we can help make sure your business is safe and secure!</p><p><br></p><p>While information security documentation is essential to your data and operation, we’ve found that far too often the documentation is incomplete or even worse, totally missing. While this is tragic, it’s also entirely avoidable by teaming up with professionals who can walk you through the documentation process and make sure all your bases are covered.</p><p><br></p><p>Successful documentation not only makes data easily accessible, it also provides a variety of user entry points, assists new users in better understanding processes, and simplifies the product, all while helping trim support costs. Beyond this, the presence of documentation makes it easier to track all phases of an application, bringing in innovative ideas to help better your software product.</p><p><br></p>",
+    "<p>There are multiple areas of your business to cover in order to ensure data privacy and security coverage. Many of these areas start with updated documentation. It is not only important to have this kind of documentation, but to fully abide by what is spelled out. This is where CyberData Pros makes the largest impact on your business. With our different consulting services, we can help make sure your business is safe and secure!</p><br/><p>While information security documentation is essential to your data and operation, we’ve found that far too often the documentation is incomplete or even worse, totally missing. While this is tragic, it’s also entirely avoidable by teaming up with professionals who can walk you through the documentation process and make sure all your bases are covered.</p><br/><p>Successful documentation not only makes data easily accessible, it also provides a variety of user entry points, assists new users in better understanding processes, and simplifies the product, all while helping trim support costs. Beyond this, the presence of documentation makes it easier to track all phases of an application, bringing in innovative ideas to help better your software product.</p>",
   segments: [
     {
       title: "Disaster <span>Recovery</span> Plan",
@@ -10,8 +10,33 @@ export const consultingData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247610/service-segment-badges/disaster-recover-plan-servicce.svg",
       headLine: `Shield your business against unexpected setbacks with a Disaster Recovery Plan. We help you bounce back swiftly by protecting crucial systems and infrastructure, minimizing downtime.`,
-      textBlock: `<p>Many privacy laws require having a disaster recovery plan. Not only is a DR plan important to maintain compliance and avoid fines, the risks of not having a plan can include data loss, reduced productivity, unplanned expenses, damage to your business’s reputation and loss of customers and revenue.</p><p><br></p><p>After any type of event that stops daily operations, reducing the damage and disruption to quickly restore business operations is critical.&nbsp;</p><p><br></p><p>A DR plan is often part of your overall business continuity plan and consists of policies and procedures to enable the recovery of critical infrastructure and systems following a disaster. An important component of the plan is outlining critical processes and the maximum time each can be down in order for your business to recover.</p>`,
-      dropDownItems: [],
+      textBlock: `<p>Many privacy laws require having a disaster recovery plan. Not only is a DR plan important to maintain compliance and avoid fines, the risks of not having a plan can include data loss, reduced productivity, unplanned expenses, damage to your business’s reputation and loss of customers and revenue.</p><br/><p>After any type of event that stops daily operations, reducing the damage and disruption to quickly restore business operations is critical.&nbsp;</p><br/><p>A DR plan is often part of your overall business continuity plan and consists of policies and procedures to enable the recovery of critical infrastructure and systems following a disaster. An important component of the plan is outlining critical processes and the maximum time each can be down in order for your business to recover.</p>`,
+      dropDownItems: [
+        {
+          title: "Define Objective and scope",
+          info: "Define the objectives of your disaster recovery plan",
+        },
+        {
+          title: "Perform a risk assessment",
+          info: "Identify potential risks and vulnerabilities that could lead to a disaster",
+        },
+        {
+          title: "Perform a business impact analysis",
+          info: "Determine the business functions, processes, systems, and data that are essential for your organization's operations.",
+        },
+        {
+          title: "Define recovery measures and procedures",
+          info: "Define the appropriate measures and step-by-step procedures for disaster recovery based on the risks and business impact you identified.",
+        },
+        {
+          title: "Conduct testing and training regularly",
+          info: "Regularly test the disaster recovery plan and conduct training sessions for employees ",
+        },
+        {
+          title: "Review and update the plan regularly",
+          info: "Review and update the disaster recovery plan periodically to incorporate changes in technology, business operations, and potential risks",
+        },
+      ],
     },
     {
       title: "Business <span>Continuity</span> Plan",
@@ -19,9 +44,34 @@ export const consultingData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247611/service-segment-badges/business-continuity-paln-service.svg",
       headLine: `Protect your operations with a Business Continuity Plan. Navigate disruptions seamlessly, ensuring your business remains resilient and functional during unforeseen challenges.`,
-      textBlock: `<p>There are a variety of emergencies or disruptions – natural disasters, power or equipment failure, staff departure – that could impact your day-to-day operations. Insurance is great, but the benefits may come too late to save your business. It’s important to consider how your business would recover before these events occur.&nbsp;</p><p><br></p><p>By considering potential risks and their impact and having a documented plan in place to prevent disruption and recover from it, you can design your processes and systems in a way that will enable operations to continue during disaster recovery.&nbsp;</p><p><br></p><p>Once defined, recovery strategies, roles and responsibilities, and communication plans must be trained and tested. Reviewing, testing, and updating the plan at least once a year (or more depending on your needs) is key.</p>
+      textBlock: `<p>There are a variety of emergencies or disruptions – natural disasters, power or equipment failure, staff departure – that could impact your day-to-day operations. Insurance is great, but the benefits may come too late to save your business. It’s important to consider how your business would recover before these events occur.&nbsp;</p><br /><p>By considering potential risks and their impact and having a documented plan in place to prevent disruption and recover from it, you can design your processes and systems in a way that will enable operations to continue during disaster recovery.&nbsp;</p><br/><p>Once defined, recovery strategies, roles and responsibilities, and communication plans must be trained and tested. Reviewing, testing, and updating the plan at least once a year (or more depending on your needs) is key.</p>
 `,
-      dropDownItems: [],
+      dropDownItems: [
+        {
+          title: "Identify and assess your risks",
+          info: "Identify and prioritize risks to your operations",
+        },
+        {
+          title: "Identify critical elements of your organization",
+          info: "Identify the tools, systems, and skills that are essential to your operations",
+        },
+        {
+          title: "Identify ways to mitigate risks ",
+          info: "Identify mitigation strategies for the risks facing your organization",
+        },
+        {
+          title: "Define recovery measures and procedures",
+          info: "Identify preparedness strategies for the loss of critical rolls, systems, and skills at your organization",
+        },
+        {
+          title: "Prepare for how you will respond after a crisis",
+          info: "Create a recovery team that will initiate recovery actions after a crisis",
+        },
+        {
+          title: "Keep your plan up to date",
+          info: "Update your business continuity plan as threats and your company needs evolve",
+        },
+      ],
     },
     {
       title: "Security <span>Questionnaires</span> ",
@@ -29,8 +79,15 @@ export const consultingData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247607/service-segment-badges/secuirty-questionaire-service.svg",
       headLine: `At CyberDats Pros, we guide you through the process, making sure your business meets top-notch security standards, fostering trust among your stakeholders.`,
-      textBlock: `<p>A typical security questionnaire is going to cover areas of your business that range from documentation of disaster recovery to physical security mechanisms in your business. On average, these questionnaires can be hundreds of questions long! Yes, you read that right, and many of these require answers within a few weeks.</p><p><br></p><p>The team at CyberData Pros has years of experience filling these out and working alongside our clients to help get these completed. We will work to get these completed on your behalf so you can focus on running your business!</p>`,
-      dropDownItems: [],
+      textBlock: `<p>A typical security questionnaire is going to cover areas of your business that range from documentation of disaster recovery to physical security mechanisms in your business. On average, these questionnaires can be hundreds of questions long! Yes, you read that right, and many of these require answers within a few weeks.</p><br /><p>The team at CyberData Pros has years of experience filling these out and working alongside our clients to help get these completed. We will work to get these completed on your behalf so you can focus on running your business!</p>`,
+      dropDownItems: [
+        // { title: "", info: "" },
+        // { title: "", info: "" },
+        // { title: "", info: "" },
+        // { title: "", info: "" },
+        // { title: "", info: "" },
+        // { title: "", info: "" },
+      ],
     },
     {
       title: "Policy <span>Documents</span> ",
@@ -38,7 +95,7 @@ export const consultingData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247609/service-segment-badges/policy-documents-service.svg",
       headLine: `Keeping your documentation current is essential so that critical pieces of the business are known to all. The worst thing that can happen is an employee walks out the door and nothing is documented. CyberData Pros will customize all of these policies to fit your business. Our certified consultants will work with your team to ensure you have the proper policies in place.`,
-      textBlock: `<p>Documenting important processes for your business and employees is critical to the overall success of the business. This is no different than privacy and security documentation for your business. Having the proper documentation for your business will help with client/vendor questionnaires, insurance for your business, and knowing how secure data is.</p><p><br></p><p>There are multiple pieces of data privacy and security documentation that your business needs. Documentation does differ from industry to industry, but many of the critical documents are universal across the board.&nbsp;</p><p><br></p><p>Keeping your documentation current is essential so that critical pieces of the business are known to all. The worst thing that can happen is an employee walks out the door and nothing is documented.</p>`,
+      textBlock: `<p>Documenting important processes for your business and employees is critical to the overall success of the business. This is no different than privacy and security documentation for your business. Having the proper documentation for your business will help with client/vendor questionnaires, insurance for your business, and knowing how secure data is.</p><br /><p>There are multiple pieces of data privacy and security documentation that your business needs. Documentation does differ from industry to industry, but many of the critical documents are universal across the board.&nbsp;</p><br/><p>Keeping your documentation current is essential so that critical pieces of the business are known to all. The worst thing that can happen is an employee walks out the door and nothing is documented.</p>`,
       dropDownItems: [
         {
           title: "IT Security Policy",

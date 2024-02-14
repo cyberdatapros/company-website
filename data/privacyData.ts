@@ -62,8 +62,29 @@ export const privacyData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247610/service-segment-badges/cookie-compliance-service.svg",
       headLine: `Maintaining cookie compliance is vital for businesses to respect user privacy and meet regulatory standards. CyberData Pros specializes in providing practical guidance, helping businesses implement clear and user-friendly cookie policies. Our expertise minimizes legal risks and establishes trust with customers.`,
-      textBlock: ``,
-      dropDownItems: [],
+      textBlock: `<p>When it comes to cookies, cookie compliance is the act of complying with privacy laws for the usage of cookies on a website. The regulations lay out the best practices for deploying cookies that a website is liable to adopt.</p><br/><p>You should obtain consent by giving the user specific separate information about what they are being asked to agree to and providing them with a way to accept by means of a positive action to opt-in.<p/>`,
+      dropDownItems: [
+        {
+          title: "Audit Your Website's Use of Cookies",
+          info: "Identify all cookies your website uses, including first-party and third-party cookies, and understand the purpose of each cookie and the data it collects or processes.",
+        },
+        {
+          title: "Create a Cookie Policy",
+          info: "Draft a comprehensive Cookie Policy that clearly explains what cookies are, how they are used on your website, and the purpose of each type of cookie, while also including information on how users can manage their cookie preferences and provide consent.",
+        },
+        {
+          title: "Implement Cookie Consent Banner or Pop-up",
+          info: "Design and implement a cookie consent banner or pop-up that informs users about the use of cookies on your website, including options for users to accept or reject cookies, and provide a link to your Cookie Policy for more information, ensuring that the banner is non-intrusive but still noticeable.",
+        },
+        {
+          title: "Obtain Explicit Consent",
+          info: "Ensure that users have the option to provide explicit consent before cookies are set, especially for non-essential cookies and tracking technologies, by not using pre-checked checkboxes for cookie consent and allowing users to withdraw their consent and change their cookie preferences easily.",
+        },
+        {
+          title: "Configure Cookie Settings",
+          info: "Implement mechanisms to allow users to customize their cookie preferences, such as selecting specific types of cookies to accept or reject, providing granular control over cookie settings to empower users to make informed choices about their data privacy.",
+        },
+      ],
     },
   ],
 };

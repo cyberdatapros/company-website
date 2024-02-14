@@ -15,6 +15,7 @@
 .blogs-page-header {
   margin: 40px 0px 16px;
   font-size: 28px;
+  text-transform: capitalize;
 }
 
 .blog-card {

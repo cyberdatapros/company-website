@@ -10,7 +10,7 @@ type AboutText = {
 
 const aboutText: AboutText = {
   mission: `Our mission is to provide data privacy and security expertise to help companies spend more time growing their business by establishing a more secure ecosystem.`,
-  values: `At CyberData Pros, our success is built on a foundation of strong core values, which guide us in every decision we make. We promise to make a Commitment to personal and shared Growth while embracing Teamwork to reach success by taking Accountability for each other and maintaining Integrity.`,
+  values: `At CyberData Pros, our success is built on a foundation of strong core values, which guide us in every decision we make. We promise to make a <strong>Commitment</strong> to personal and shared <strong>Growth</strong> while embracing <strong>Teamwork</strong> to reach success by taking <strong>Accountability</strong> for each other and maintaining <strong>Integrity</strong>.`,
 };
 
 const AboutSection = () => {
@@ -52,7 +52,10 @@ const AboutSection = () => {
             Our Core Values
           </button>
         </div>
-        <p className={styles["text-content"]}>{aboutText[currentAboutText]}</p>
+        <p
+          className={styles["text-content"]}
+          dangerouslySetInnerHTML={{ __html: aboutText[currentAboutText] }}
+        />
       </div>
     </div>
   );

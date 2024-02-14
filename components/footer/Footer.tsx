@@ -64,7 +64,7 @@ const Footer = () => {
               fontSize: 18,
             }}
           >
-            Data Privacy and & Secuirty Made Simple
+            Data Privacy and Secuirty Made Simple
           </p>
           <div className={styles["social-icons"]}>
             {socialIcons.map(({ url, image }, index) => (
