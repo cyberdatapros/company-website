@@ -100,7 +100,8 @@ const BlogEditor = ({ id }: { id?: string }) => {
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const image = await imageUploader(formData);
+    const isUpdate = typeof id !== "undefined";
+    const image = isUpdate ? formData.image : await imageUploader(formData);
     const isValid = validateForm({ ...formData, image });
     if (!isValid) {
       setError("All fields must be completed");
@@ -109,7 +110,7 @@ const BlogEditor = ({ id }: { id?: string }) => {
 
     let isDbUpdatedSuccess = false;
 
-    if (id) {
+    if (isUpdate) {
       const updateRes = await updateBlog(id, {
         ...formData,
         image,

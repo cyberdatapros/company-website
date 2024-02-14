@@ -9,7 +9,7 @@ export const cyberSecurityData: ServicePageType = {
       url: "vciso",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247602/service-segment-badges/vciso-service.svg",
-      shortHand: "VCISO",
+      shortHand: "vCISO",
       headLine: `Our experts have served in a broad range of industries for companies of various sizes and know how to align security strategies with your company’s challenges.`,
       textBlock: `<p>Your CISO plays a critical role in IT security strategy design, implementation, assessment, and mitigation of potential cyber-security risks.&nbsp;</p><p><br></p><p>Organizations can take advantage of this opportunity to utilize external expertise instead of maintaining a full-time, in-house position. As the expert in the latest cybersecurity and data privacy practices, responsibilities encompass staff training, leading client calls, conducting ongoing security and privacy audits to minimize gaps, and reviewing security questionnaires, client contracts, vendor paperwork, and other necessary documentation for business operations.</p>`,
       dropDownItems: [
