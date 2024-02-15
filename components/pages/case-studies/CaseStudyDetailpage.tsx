@@ -57,7 +57,15 @@ const CaseStudyDetailpage = ({ studyStr }: { studyStr: string }) => {
         <section className={styles["testimonial"]}>
           <div>
             <h3>Testimonial</h3>
-            <p dangerouslySetInnerHTML={{ __html: study.testimonial }} />
+            <p
+              style={{
+                marginBottom: 40,
+              }}
+            >
+              {study.testimonial}
+            </p>
+            <p>{study.clientName}</p>
+            <p>{study.clientTitle}</p>
           </div>
         </section>
       </div>

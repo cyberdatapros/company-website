@@ -79,14 +79,24 @@ export const consultingData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247607/service-segment-badges/secuirty-questionaire-service.svg",
       headLine: `At CyberDats Pros, we guide you through the process, making sure your business meets top-notch security standards, fostering trust among your stakeholders.`,
-      textBlock: `<p>A typical security questionnaire is going to cover areas of your business that range from documentation of disaster recovery to physical security mechanisms in your business. On average, these questionnaires can be hundreds of questions long! Yes, you read that right, and many of these require answers within a few weeks.</p><br /><p>The team at CyberData Pros has years of experience filling these out and working alongside our clients to help get these completed. We will work to get these completed on your behalf so you can focus on running your business!</p>`,
+      textBlock: `<p>A typical security questionnaire is going to cover areas of your business that range from documentation of disaster recovery to physical security mechanisms in your business. On average, these questionnaires can be hundreds of questions long! Yes, you read that right, and many of these require answers within a few weeks.</p><br/><p>The team at CyberData Pros has years of experience filling these out and working alongside our clients to help get these completed. We will work to get these completed on your behalf so you can focus on running your business!</p>`,
       dropDownItems: [
-        // { title: "", info: "" },
-        // { title: "", info: "" },
-        // { title: "", info: "" },
-        // { title: "", info: "" },
-        // { title: "", info: "" },
-        // { title: "", info: "" },
+        {
+          title: "Initial Assessment and Information Gathering",
+          info: "Understanding the organization's security posture, policies, procedures, and the specific requirements of the questionnaire. Conduct a meeting to understand the organization security infrastructure & collect all relevant documentation, including previous security assessments, policies, and any compliance reports. Review the questionnaire to identify any gaps in information or areas that require detailed technical responses. ",
+        },
+        {
+          title: "Drafting and Reviewing Responses",
+          info: "Prepare comprehensive and accurate responses to the questionnaire that reflects the organization’s security posture and compliance status. Draft responses to each question, using the collected policies, procedures, and any other relevant information to the questionnaire.  Engage with matter experts within the organization for technical details or clarification as needed & review drafted up answers with the organization to ensure completeness of the information provided.",
+        },
+        {
+          title: "Finalization and Submission",
+          info: "Ensure the final response is complete, accurate, and ready for submission to the requested party. Conduct a final review of the questionnaire with the client/organization, addressing any remaining concerns or questions. Finalize the document, making sure it is professionally formatted and meets any submission requirements. Assist the client with the submission process, if necessary. ",
+        },
+        {
+          title: "Ongoing Support",
+          info: "Provide ongoing support after the questionnaire submission to address any follow-up questions or assist with implementing any recommended security improvements. Offer any assistance in responding to any clarifications or additional information from the questionnaire issuer. Provide consultant services for any implementation the organization may need to help with their security posture. Schedule follow-up meetings to review the implementation progress and to update any security documentation as necessary.",
+        },
       ],
     },
     {

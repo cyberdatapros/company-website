@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PageWrapper from "@/components/wrappers/PageWrapper";
 import Image from "next/image";
 import styles from "@/css/blog-page.module.css";
@@ -9,6 +9,7 @@ import { getDateFormat } from "@/utils/dataFormatter";
 import LoadingContainer from "../shared/LoadingContainer";
 import CardWrapper from "../wrappers/CardWrapper";
 import { getImageUrl } from "@/utils/cloudinaryHelper";
+import LoadMoreButton from "../shared/LoadMoreButton";
 
 const Card = ({
   title,
@@ -47,7 +48,13 @@ const Card = ({
   );
 };
 
-const BlogList = ({ blogList }: { blogList: Blog[] | false }) => {
+const BlogList = ({
+  blogList,
+  count,
+}: {
+  blogList: Blog[] | false;
+  count: number;
+}) => {
   if (!blogList) return <LoadingContainer height={"100vh"} />;
   return (
     <PageWrapper>
@@ -65,6 +72,7 @@ const BlogList = ({ blogList }: { blogList: Blog[] | false }) => {
             />
           ))}
         </CardWrapper>
+        <LoadMoreButton count={count} />
       </div>
     </PageWrapper>
   );
