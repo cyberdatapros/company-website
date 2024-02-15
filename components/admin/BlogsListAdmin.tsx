@@ -18,9 +18,9 @@ const BlogsListAdmin = () => {
   >([]);
 
   const getData = async () => {
-    const data = await getAllBlogs();
+    const data = await getAllBlogs("20");
     if (data) {
-      setblogsData(data);
+      setblogsData(data.data);
     }
   };
 

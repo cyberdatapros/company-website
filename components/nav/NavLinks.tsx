@@ -65,7 +65,7 @@ const links: MenuItem[] = [
     ),
   ]),
   getItem("Resources", "resources", <></>, [
-    getItem(<Link href={`/blogs`}>Blogs</Link>, "bgs", <></>),
+    getItem(<Link href={`/blogs?page=1`}>Blogs</Link>, "bgs", <></>),
     getItem(
       <Link href={`/case-studies`}>Case Studies</Link>,
       "case-stud",

@@ -1,9 +1,24 @@
 import db from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async (request: NextRequest) => {
-  const data = await db.blog.findMany({});
-  return NextResponse.json({ data });
+export const GET = async (
+  request: NextRequest,
+  { params }: { params: { skip: string } }
+) => {
+  const takeQuery = request.nextUrl.searchParams.get("take");
+
+  const take = takeQuery ? +takeQuery * 8 : 8;
+
+  const count = await db.blog.count();
+
+  const data = await db.blog.findMany({
+    take: take,
+    orderBy: {
+      createdAt: "desc",
+    },
+  });
+
+  return NextResponse.json({ data, count });
 };
 
 export const POST = async (request: Request) => {

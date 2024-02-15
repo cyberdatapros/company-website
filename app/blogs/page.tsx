@@ -1,13 +1,16 @@
 import BlogList from "@/components/pages/BlogListPage";
 import { getAllBlogs } from "@/utils/crudHelpers";
+import { redirect } from "next/navigation";
 
-const page = async () => {
-  const data = await getAllBlogs();
-
-  if (!data) {
+const page = async ({ searchParams }: { searchParams: { page: string } }) => {
+  if (!searchParams.page) {
+    redirect("/blogs?page=1");
+  }
+  const blogs = await getAllBlogs(searchParams.page);
+  if (!blogs) {
     return <></>;
   }
-  return <BlogList blogList={data} />;
+  return <BlogList blogList={blogs.data} count={blogs.count} />;
 };
 
 export const dynamic = "force-dynamic";

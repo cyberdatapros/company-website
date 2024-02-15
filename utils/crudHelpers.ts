@@ -22,11 +22,13 @@ export type UserInputBlogType = {
   createdAt: Date;
 };
 
-export const getAllBlogs = async (): Promise<Blog[] | false> => {
+export const getAllBlogs = async (
+  page: string
+): Promise<{ data: Blog[]; count: number } | false> => {
   try {
-    const data = await fetch(`${domain}/api/blog`);
-    const blogs = await data.json();
-    return blogs.data;
+    const data = await fetch(`${domain}/api/blog?take=${page}`);
+    const blogs: { data: Blog[]; count: number } = await data.json();
+    return blogs;
   } catch (error) {
     console.log(error);
   }
