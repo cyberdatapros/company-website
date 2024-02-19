@@ -11,4 +11,6 @@ const Page = async ({ params }: { params: { id: string } }) => {
   return <BlogDetailPage data={data} />;
 };
 
+export const revalidate = 3600;
+
 export default Page;

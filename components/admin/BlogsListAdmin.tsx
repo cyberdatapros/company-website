@@ -4,40 +4,18 @@ import styles from "@/css/admin-blogs.module.css";
 import Link from "next/link";
 import { deleteBlog, getAllBlogs } from "@/utils/crudHelpers";
 import { deleteImage } from "@/utils/cloudinaryHelper";
+import { Blog } from "@prisma/client";
 
-const BlogsListAdmin = () => {
-  const [blogsData, setblogsData] = useState<
-    {
-      id: string;
-      createdAt: Date;
-      title: string;
-      hashTag: string;
-      content: string;
-      image: string;
-    }[]
-  >([]);
-
-  const getData = async () => {
-    const data = await getAllBlogs("20");
-    if (data) {
-      setblogsData(data.data);
-    }
-  };
-
+const BlogsListAdmin = ({ blogsData }: { blogsData: Blog[] }) => {
   const removeBlog = async (id: string, image: string) => {
     const dBres = deleteBlog(id);
     const imgDelRes = deleteImage(image);
     const completed = await Promise.all([imgDelRes, dBres]);
 
     if (completed) {
-      getData();
     }
   };
-  useEffect(() => {
-    getData();
-  }, []);
 
-  if (!blogsData) return <h1>loading...</h1>;
   return (
     <div className={styles["table-wrapper"]}>
       <Link
@@ -52,7 +30,7 @@ const BlogsListAdmin = () => {
         Create New
       </Link>
       <Link
-        href={"/blogs"}
+        href={"/blogs?page=1"}
         className={styles["action-button"]}
         style={{
           backgroundColor: "green",

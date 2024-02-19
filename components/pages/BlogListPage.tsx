@@ -2,7 +2,6 @@ import React from "react";
 import PageWrapper from "@/components/wrappers/PageWrapper";
 import Image from "next/image";
 import styles from "@/css/blog-page.module.css";
-import { getAllBlogs } from "@/utils/crudHelpers";
 import { Blog } from "@prisma/client";
 import Link from "next/link";
 import { getDateFormat } from "@/utils/dataFormatter";
@@ -27,7 +26,6 @@ const Card = ({
   index: number;
 }) => {
   const cloudImage = getImageUrl(image);
-
   return (
     <Link
       href={`/blogs/${id}`}
@@ -54,14 +52,7 @@ const Card = ({
   );
 };
 
-const BlogList = ({
-  blogList,
-  count,
-}: {
-  blogList: Blog[] | false;
-  count: number;
-}) => {
-  if (!blogList) return <LoadingContainer height={"100vh"} />;
+const BlogList = ({ blogList, count }: { blogList: Blog[]; count: number }) => {
   return (
     <PageWrapper>
       <div className={styles["blogs-page-wrapper"]}>

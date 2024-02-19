@@ -1,11 +1,13 @@
-import dynamic from 'next/dynamic'
+import BlogsListAdmin from "@/components/admin/BlogsListAdmin";
+import { getAllBlogs } from "@/utils/crudHelpers";
+import LoadingContainer from "@/components/shared/LoadingContainer";
 
-const BlogList = dynamic(() => import('@/components/admin/BlogsListAdmin'), {
-  ssr: false,
-})
+const page = async ({ searchParams }: { searchParams: { page: string } }) => {
+  const blogs = await getAllBlogs(20);
+  if (!blogs) return <LoadingContainer height={"100vh"} />;
+  return <BlogsListAdmin blogsData={blogs.data} />;
+};
 
-const page = () => {
-  return <BlogList />
-}
+export const revalidate = 3600;
 
-export default page
+export default page;
