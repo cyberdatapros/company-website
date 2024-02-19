@@ -7,7 +7,7 @@ export const GET = async (
 ) => {
   const takeQuery = request.nextUrl.searchParams.get("take");
 
-  const take = takeQuery ? +takeQuery * 8 : 8;
+  const take = takeQuery ? +takeQuery * 4 : 4;
 
   const count = await db.blog.count();
 

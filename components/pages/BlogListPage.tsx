@@ -17,17 +17,23 @@ const Card = ({
   image,
   tag,
   id,
+  index,
 }: {
   title: string;
   date: string;
   image: string;
   tag: string;
   id: string;
+  index: number;
 }) => {
   const cloudImage = getImageUrl(image);
 
   return (
-    <Link href={`/blogs/${id}`} className={styles["blog-card"]}>
+    <Link
+      href={`/blogs/${id}`}
+      id={`${index + 1}`}
+      className={styles["blog-card"]}
+    >
       <span className={styles["card-tag"]}>#{tag}</span>
       <div className={styles["blog-image-container"]}>
         <Image
@@ -61,7 +67,7 @@ const BlogList = ({
       <div className={styles["blogs-page-wrapper"]}>
         <h1 className={styles["blogs-page-header"]}>Read our blogs</h1>
         <CardWrapper>
-          {blogList.map((blog) => (
+          {blogList.map((blog, index) => (
             <Card
               key={`${blog.id}-${blog.createdAt}`}
               title={blog.title}
@@ -69,6 +75,7 @@ const BlogList = ({
               image={blog.image}
               tag={blog.hashTag}
               id={blog.id}
+              index={index}
             />
           ))}
         </CardWrapper>

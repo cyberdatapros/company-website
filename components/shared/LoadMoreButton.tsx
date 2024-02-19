@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import styles from "@/css/load-more.module.css";
 
@@ -10,16 +10,19 @@ const LoadMoreButton = ({ count }: { count: number }) => {
 
   useEffect(() => {
     if (+pageQuery > 1) {
-      window.scroll(0, +pageQuery * 300);
+      document
+        .getElementById(`${+pageQuery * 4 - 3}`)
+        ?.scrollIntoView({ block: "end", behavior: "instant" });
     }
   }, [pageQuery]);
 
-  if (Math.ceil(count / 8) === +pageQuery) {
+  if (Math.ceil(count / 4) === +pageQuery) {
     return null;
   }
 
   return (
     <button
+      // ref={buttonRef}
       type="button"
       className={styles["loadmore"]}
       onClick={() => {
