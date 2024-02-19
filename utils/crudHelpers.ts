@@ -1,5 +1,6 @@
 import db from "@/lib/prisma";
 import { Blog } from "@prisma/client";
+import { cache } from "react";
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN_URL;
 
@@ -22,24 +23,46 @@ export type UserInputBlogType = {
   createdAt: Date;
 };
 
-export const getAllBlogs = async (
-  page: string
-): Promise<{ data: Blog[]; count: number } | false> => {
+// server actions
+export const getAllBlogs = cache(
+  async (page: number): Promise<{ data: Blog[]; count: number } | false> => {
+    try {
+      const take = page ? +page * 4 : 4;
+      const count = await db.blog.count();
+
+      const data = await db.blog.findMany({
+        take: take,
+        orderBy: {
+          createdAt: "desc",
+        },
+      });
+
+      return { data, count };
+    } catch (error) {
+      console.log(error);
+    }
+    return false;
+  }
+);
+
+export const getBlogSSR = cache(async (id: string): Promise<Blog | false> => {
   try {
-    const data = await fetch(`${domain}/api/blog?take=${page}`);
-    const blogs: { data: Blog[]; count: number } = await data.json();
-    return blogs;
+    const data = await db.blog.findUnique({ where: { id: id } });
+
+    if (data) {
+      return data;
+    }
   } catch (error) {
     console.log(error);
   }
   return false;
-};
+});
 
 export const createBlog = async (
   formData: UserInputBlogType
 ): Promise<Blog | false> => {
   try {
-    const res = await fetch("/api/blog", {
+    const res = await fetch(`/api/blog`, {
       method: "POST",
       body: JSON.stringify(formData),
     });
@@ -97,19 +120,6 @@ export const getBlog = async (id: string): Promise<Blog | false> => {
     const data = await res.json();
     if (data) {
       return data.data;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-  return false;
-};
-
-export const getBlogSSR = async (id: string): Promise<Blog | false> => {
-  try {
-    const data = await db.blog.findUnique({ where: { id: id } });
-
-    if (data) {
-      return data;
     }
   } catch (error) {
     console.log(error);
