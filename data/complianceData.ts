@@ -10,10 +10,8 @@ export const complianceData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247594/service-segment-badges/iso-27001-service.svg",
       headLine:
-        "CyberData Pros has successfully helped businesses – some of whom had not even started their compliance journey – achieve certification. We have a 100% audit success rate with all of our clients. Demonstrate That Your Business Takes Cybersecurity and Data Privacy Seriously",
-      textBlock: `<p>Compliance frameworks can be an effective way to increase customer confidence and reduce your overall costs and risks of data breaches or incidents.</p><p>Win RFPs and stand out from your competitors.</p><p><br></p><p>Attaining ISO 27001 certification proves to be a valuable asset for attracting and retaining clients, especially those on an international scale. This certification guarantees the confidentiality, availability, and integrity of data.</p><br></p><ul><li>Win RFPs and stand out from your competitors.</li><li>Helps ensure that data is kept confidential, available and unaltered.</li><li>Achieving certification can be beneficial for organizations that operate globally to commit to international best practices.</li></ul>.
-
-`,
+        "CyberData Pros has successfully helped businesses – some of whom had not even started their compliance journey – achieve certification. We have a 100% audit success rate with all of our clients. Demonstrate that Your business takes cybersecurity and data privacy seriously.",
+      textBlock: `<p>Compliance frameworks can be an effective way to increase customer confidence and reduce your overall costs and risks of data breaches or incidents.</p><p>Win RFPs and stand out from your competitors.</p><p><br></p><p>Attaining ISO 27001 certification proves to be a valuable asset for attracting and retaining clients, especially those on an international scale. This certification guarantees the confidentiality, availability, and integrity of data.</p><br></p><ul><li>Win RFPs and stand out from your competitors.</li><li>Helps ensure that data is kept confidential, available and unaltered.</li><li>Achieving certification can be beneficial for organizations that operate globally to commit to international best practices.</li></ul>`,
       dropDownItems: [
         {
           title: "Planning",
@@ -33,7 +31,7 @@ export const complianceData: ServicePageType = {
         },
         {
           title: "Continuous Improvement and Ongoing Maintenance",
-          info: `The objective is to resolve any nonconformities identified during the audit and attain certification, ensuring meticulous planning and adherence to all recurring requirements for Year 2 and Year 3. Additionally, work collaboratively with staff to maintain continuous guidance, direction, and support throughout each surveillance audit in the mentioned capacities.`,
+          info: `The objective is to resolve any nonconformity's identified during the audit and attain certification, ensuring meticulous planning and adherence to all recurring requirements for Year 2 and Year 3. Additionally, work collaboratively with staff to maintain continuous guidance, direction, and support throughout each surveillance audit in the mentioned capacities.`,
         },
       ],
     },
@@ -44,11 +42,11 @@ export const complianceData: ServicePageType = {
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707252811/service-segment-badges/iso-42001-service.svg",
       headLine:
         "The ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization. CyberData Pros can help your business achieve this certification to ensure confidence and recognition in your business’s AI systems.",
-      textBlock: `<p>Artificial Intelligence (AI) is shaking the industry with its innovation and boundless potential for integration into business systems. Many questions arise with the introduction of AI: what is AI capable of, where is AI taking us, and how can we control AI use? Global and national leaders are striving toward trustworthy and responsible AI regulations with respect to humans at its core. ISO 42001 was introduced as the first and only global standard for AI management. ISO 42001 provides the framework for organizations that are thinking about or currently using AI in any capacity.</p><br/><p>This framework promotes governance, responsible use, fairness, and security in a business’s AI implementation. ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization. </p>`,
+      textBlock: `<p>Artificial Intelligence (AI) is shaking the industry with its innovation and boundless potential for integration into business systems. Many questions arise with the introduction of AI: what is AI capable of, where is AI taking us, and how can we control AI use? Global and national leaders are striving toward trustworthy and responsible AI regulations with respect to humans at its core. ISO 42001 was introduced as the first and only global standard for AI management. ISO 42001 provides the framework for organizations that are thinking about or currently using AI in any capacity.</p><br/><p>This framework promotes governance, responsible use, fairness, and security in a business’s AI implementation. ISO 42001 certification can demonstrate to clients, prospects, and partners that your business not only takes AI responsible use and fairness seriously, but that your business is a mature AI organization </p>`,
       dropDownItems: [
         {
           title: "Planning",
-          info: `In the implementation of AI, the organization determines its context of use, identifies project stakeholders and key contacts, develops a comprehensive communication plan, defines program priorities, outlines the system scope and applicability, and establishes clear criteria for what success looks lik`,
+          info: `In the implementation of AI, the organization determines its context of use, identifies project stakeholders and key contacts, develops a comprehensive communication plan, defines program priorities, outlines the system scope and applicability, and establishes clear criteria for what success looks like.`,
         },
         {
           title: "Current State Assessment",
@@ -64,7 +62,7 @@ export const complianceData: ServicePageType = {
         },
         {
           title: "Continuous Improvement and Ongoing Maintenance",
-          info: `During continuous improvement and ongoing Maintenance, the focus is on resolving any identified nonconformities during the audit to achieve certification. Additionally, there is an emphasis on planning and adherence to all recurring requirements for Year 2 and Year 3, with ongoing collaboration with staff to provide continuous guidance, direction, and support throughout each surveillance audit in the mentioned capacities.`,
+          info: `During continuous improvement and ongoing Maintenance, the focus is on resolving any identified nonconformity's during the audit to achieve certification. Additionally, there is an emphasis on planning and adherence to all recurring requirements for Year 2 and Year 3, with ongoing collaboration with staff to provide continuous guidance, direction, and support throughout each surveillance audit in the mentioned capacities.`,
         },
       ],
     },
@@ -78,31 +76,31 @@ export const complianceData: ServicePageType = {
       dropDownItems: [
         {
           title: "Planning",
-          info: `Identify project stakeholders and key contacts & develop communication plan. Define program priorities and system scope and applicability. Establish and define what success looks like. Determine organization's role as either a Controller, Processor, or both`,
+          info: `Identify project stakeholders and key contacts & develop communication plan. Define program priorities and system scope and applicability. Establish and define what success looks like. Determine organization's role as either a Controller, Processor, or both.`,
         },
         {
           title: "Gap Assessment",
-          info: "Conduct communication programme to suppliers and other stakeholders. Define roles and responsibilities. Identify applicable privacy legislation. Appoint representative(s) in other countries & Data Protection Officer (if required). Conduct competence and training needs assessment. Perform privacy-related training, information security awareness training and familiarization",
+          info: "Conduct communication programme to suppliers and other stakeholders. Define roles and responsibilities. Identify applicable privacy legislation. Appoint representative(s) in other countries & Data Protection Officer (if required). Conduct competence and training needs assessment. Perform privacy-related training, information security awareness training and familiarization.",
         },
         {
           title: "PII Mapping",
-          info: `Conduct initial PII information gathering exercise & perform audit of PII by business area. Identify lawful basis for processing PII in each case. Conduct legitimate interest assessments where required`,
+          info: `Conduct initial PII information gathering exercise & perform audit of PII by business area. Identify lawful basis for processing PII in each case. Conduct legitimate interest assessments where required.`,
         },
         {
           title: "Policies, Notices, and Rights",
-          info: `Create and implement PII principal request procedures & define PII retention and protection policy. Create or amend existing privacy notices. Develop and implement PIMS extensions to the existing ISMS. Review and amend consent methods and procedures. Also update contracts with controllers to be compliant. Address employee confidentiality requirements`,
+          info: `Create and implement PII principal request procedures & define PII retention and protection policy. Create or amend existing privacy notices. Develop and implement PIMS extensions to the existing ISMS. Review and amend consent methods and procedures. Also update contracts with controllers to be compliant. Address employee confidentiality requirements.`,
         },
         {
           title: "Privacy Impact Assessment",
-          info: `Define privacy impact assessment process & perform initial PIA. Identify international transfers of PII. Assess legality of existing international transfers`,
+          info: `Define privacy impact assessment process & perform initial PIA. Identify international transfers of PII. Assess legality of existing international transfers.`,
         },
         {
           title: "PII Breach Management ",
-          info: `Create information security incident management & PII breach notification procedure. Conduct information security incident management training. Test incident management and breach notification procedures`,
+          info: `Create information security incident management & PII breach notification procedure. Conduct information security incident management training. Test incident management and breach notification procedures.`,
         },
         {
           title: "Continuous Improvement and Ongoing Maintenance",
-          info: `Resolve any nonconformities identified during the audit and achieve certification. Ensure planning and adherence to all recurring requirements for Year 2 and Year 3. Work alongside staff to continue providing ongoing guidance, direction, and support in the above capacities through each surveillance audit`,
+          info: `Resolve any nonconformity's identified during the audit and achieve certification. Ensure planning and adherence to all recurring requirements for Year 2 and Year 3. Work alongside staff to continue providing ongoing guidance, direction, and support in the above capacities through each surveillance audit.`,
         },
       ],
     },
@@ -114,7 +112,7 @@ export const complianceData: ServicePageType = {
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707248309/service-segment-badges/cmmc-service.svg",
       shortHand: "CMMC",
       headLine: `Obtaining the (CMMC) certificate is crucial for businesses to secure sensitive information and comply with government contracts. At CyberData Pros, we specialize in guiding businesses through the CMMC certification process, ensuring they meet the necessary standards and secure sensitive data effectively.`,
-      textBlock: `<p>CMMC is a program made by the US Department of Defense. This certification is designed to enforce protection of unclassified information that is shared by the Department with its contractors and subcontractors.</p><br /><p>By working with the government, contractors handle sensitive information that is valuable to cyber attackers.CyberData Pros helps businesses that are trying to acquire government contracts with their CMMC. While CMMC is not required to work with the government at this time, it is expected to be required by government contractors and subcontractors in the next few years.</p>`,
+      textBlock: `<p>CMMC is a program made by the US Department of Defense. This certification is designed to enforce protection of unclassified information that is shared by the Department with its contractors and subcontractors.</p><br /><p>By working with the government, contractors handle sensitive information that is valuable to cyber attackers. CyberData Pros helps businesses that are trying to acquire government contracts with their CMMC. While CMMC is not required to work with the government at this time, it is expected to be required by government contractors and subcontractors in the next few years.</p>`,
       dropDownItems: [
         {
           title: "Planning",
@@ -122,7 +120,7 @@ export const complianceData: ServicePageType = {
         },
         {
           title: "Gap Assessment",
-          info: `In the Gap Assessment phase, the process begins with the collection of relevant data, documents, and information about the organization. This is followed by a review of existing documentation and the conduct of interviews. The next step involves a thorough comparison of the current state of the organization against the Cybersecurity Maturity Model Certification (CMMC) standards. The outcome is the identification of gaps in processes, controls, resources, or other pertinent areas that may require attention and improveme`,
+          info: `In the Gap Assessment phase, the process begins with the collection of relevant data, documents, and information about the organization. This is followed by a review of existing documentation and the conduct of interviews. The next step involves a thorough comparison of the current state of the organization against the Cybersecurity Maturity Model Certification (CMMC) standards. The outcome is the identification of gaps in processes, controls, resources, or other pertinent areas that may require attention and improvement.`,
         },
         {
           title: "Plan of Action and Milestones",
@@ -144,7 +142,7 @@ export const complianceData: ServicePageType = {
     },
     {
       title:
-        "Health Insurance <span>Porability</span> and <span>Accountability</span> Act",
+        "Health Insurance <span>Portability</span> and <span>Accountability</span> Act",
       url: "hipaa",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247597/service-segment-badges/hipaa-service.svg",
@@ -202,8 +200,8 @@ export const complianceData: ServicePageType = {
       url: "fed-ramp",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/fed-ramp-service.svg",
-      headLine: `CyberData Pros can help you to achieve FedRAMP Ready status and prepare you to receive an Authorization to Operate (ATO) if you don’t already have an agency sponsor. Having FedRAMP Ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP Authorized CSO’s.`,
-      textBlock: `<p>FedRAMP is a government wide compliance program for cloud services. The Federal Risk and Authorization Management Program (FedRAMP) was founded in 2011 to standardize security requirements and processes for Cloud Service Offerings (CSO) across the federal government. Any Cloud Service Provider who wishes to do business with the United States Federal government will need to get their CSOs FedRAMP authorized, because cloud service that holds federal data must be FedRAMP authorized.</p><br /><p>Having FedRAMP Ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP Authorized CSO’s. FedRAMP Ready can even prioritize your CSO for authorization by the Joint Authorization Board (JAB).</p>`,
+      headLine: `CyberData Pros can help you to achieve FedRAMP Ready status and prepare you to receive an authorization to operate (ATO) if you don’t already have an agency sponsor. Having FedRAMP Ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP authorized CSO’s.`,
+      textBlock: `<p>FedRAMP is a government wide compliance program for cloud services. The federal Risk and authorization Management Program (FedRAMP) was founded in 2011 to standardize security requirements and processes for cloud Service Offerings (CSO) across the federal government. Any cloud service provider who wishes to do business with the United States federal government will need to get their CSOs FedRAMP authorized, due to the requirement all cloud services that hold federal data must be FedRAMP authorized.</p><br /><p>Having FedRAMP ready status will allow you to demonstrate FedRAMP equivalency for other frameworks that rely on FedRAMP authorized CSOs. FedRAMP Ready can even prioritize your CSO for authorization by the Joint Authorization Board (JAB).</p>`,
       dropDownItems: [
         {
           title: "Planning",
@@ -211,7 +209,7 @@ export const complianceData: ServicePageType = {
         },
         {
           title: "Gap Assessment",
-          info: `<p>The Gap Assessment process involves assessing the current state of Chief Security Officer (CSO) and Cloud Service Provider (CSP) against FedRAMP controls. The outcome is the delivery of a comprehensive Gap Assessment Report that identifies gaps and weaknesses. Subsequently, a strategy is developed to achieve FedRAMP compliance.</p>`,
+          info: `<p>The Gap Assessment process involves assessing the current state of Chief Security Officer (CSO) and Cloud Service Provider (CSP) against FedRAMP controls. The outcome is the delivery of a comprehensive Gap Assessment report that identifies gaps and weaknesses. Subsequently, a strategy is developed to achieve FedRAMP compliance.</p>`,
         },
         {
           title: "Policy Development and Review",
@@ -223,15 +221,15 @@ export const complianceData: ServicePageType = {
         },
         {
           title: "Readiness Assessment",
-          info: `<p>In the Readiness Assessment phase, this process involves assisting in the completion of a preliminary assessment to evaluate the organization's preparedness for the Third-Party Assessment Organization (3PAO) Readiness Assessment. The outcome includes delivering a preliminary Readiness Assessment Report to stakeholders and providing advice on recommendations to ensure the Chief Security Officer (CSO) achieves Ready status.</p>`,
+          info: `<p>In the Readiness Assessment phase, this process involves assisting in the completion of a preliminary assessment to evaluate the organization's preparedness for the Third-Party Assessment Organization (3PAO). The outcome includes delivering a preliminary Readiness Assessment report to stakeholders and providing advice on recommendations to ensure the Chief Security Officer (CSO) achieves ready status.</p>`,
         },
         {
           title: "Assessment Preparation and Assistance",
-          info: `<p>Next involves identifying and gathering evidence required for assessment by the FedRAMP 3rd Party Assessor Organization. This includes evaluating the effectiveness of documentation. Subsequently, approved evidence, System Security Plan (SSP), and other relevant documentation are prepared for the assessment. The final step involves actively participating in the assessment alongside the organization and the assessor, providing support throughout the assessment process.</p>`,
+          info: `<p>This involves identifying and gathering evidence required for assessment by the FedRAMP 3rd Party assessor organization. This includes evaluating the effectiveness of documentation. Subsequently, approved evidence, System Security Plan (SSP), and other relevant documentation are prepared for the assessment. The final step involves actively participating in the assessment alongside the organization and the assessor, providing support throughout the assessment process.</p>`,
         },
         {
           title: "Continuous Monitoring",
-          info: `<p>Lastly, we assist in the remediation of Plans of Action and Milestones (POAMs) after the Initial Authorization Assessment, along with the maintenance of documentation for remediation. It also includes the ongoing task of maintaining and updating policies and the System Security Plan (SSP) to ensure continuous FedRAMP compliance and meet Continuous Monitoring requirements. Additionally, the responsibility encompasses preparing Monthly continuous monitoring summaries for both the Third-Party Assessment Organization (3PAO) and Authorizing Officials. Furthermore, assistance is provided to the Cloud Service Provider (CSP) in completing Significant Change requests when implementing significant changes to the Chief Security Officer (CSO) or onboarding new features.</p>`,
+          info: `<p>Lastly, we assist in the remediation of Plans of Action and Milestones (POAMS) after the initial authorization assessment, along with the maintenance of documentation for remediation. It also includes the ongoing task of maintaining and updating policies and the System Security Plan (SSP) to ensure continuous FedRAMP compliance and meet Continuous Monitoring requirements. Additionally, the responsibility encompasses preparing Monthly continuous monitoring summaries for both the Third-Party Assessment Organization (3PAO) and Authorizing Officials. Furthermore, assistance is provided to the Cloud Service Provider (CSP) in completing Significant Change requests when implementing significant changes to the Chief Security Officer (CSO) or onboarding new features.</p>`,
         },
       ],
     },
@@ -241,7 +239,7 @@ export const complianceData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/pci-service.svg",
       headLine: `Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData Pros can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.`,
-      textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><br><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><br/><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and reputational damage. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
+      textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><br><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><br/><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and a damaged reputation. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
 `,
       dropDownItems: [
         {

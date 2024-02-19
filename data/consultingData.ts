@@ -6,7 +6,7 @@ export const consultingData: ServicePageType = {
   segments: [
     {
       title: "Disaster <span>Recovery</span> Plan",
-      url: "desaster-recovery",
+      url: "disaster-recovery",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247610/service-segment-badges/disaster-recover-plan-servicce.svg",
       headLine: `Shield your business against unexpected setbacks with a Disaster Recovery Plan. We help you bounce back swiftly by protecting crucial systems and infrastructure, minimizing downtime.`,
@@ -14,11 +14,11 @@ export const consultingData: ServicePageType = {
       dropDownItems: [
         {
           title: "Define Objective and scope",
-          info: "Define the objectives of your disaster recovery plan",
+          info: "Define the objectives of your disaster recovery plan.",
         },
         {
           title: "Perform a risk assessment",
-          info: "Identify potential risks and vulnerabilities that could lead to a disaster",
+          info: "Identify potential risks and vulnerabilities that could lead to a disaster.",
         },
         {
           title: "Perform a business impact analysis",
@@ -30,11 +30,11 @@ export const consultingData: ServicePageType = {
         },
         {
           title: "Conduct testing and training regularly",
-          info: "Regularly test the disaster recovery plan and conduct training sessions for employees ",
+          info: "Regularly test the disaster recovery plan and conduct training sessions for employees.",
         },
         {
           title: "Review and update the plan regularly",
-          info: "Review and update the disaster recovery plan periodically to incorporate changes in technology, business operations, and potential risks",
+          info: "Review and update the disaster recovery plan periodically to incorporate changes in technology, business operations, and potential risks.",
         },
       ],
     },
@@ -49,41 +49,41 @@ export const consultingData: ServicePageType = {
       dropDownItems: [
         {
           title: "Identify and assess your risks",
-          info: "Identify and prioritize risks to your operations",
+          info: "Identify and prioritize risks to your operations.",
         },
         {
           title: "Identify critical elements of your organization",
-          info: "Identify the tools, systems, and skills that are essential to your operations",
+          info: "Identify the tools, systems, and skills that are essential to your operations.",
         },
         {
           title: "Identify ways to mitigate risks ",
-          info: "Identify mitigation strategies for the risks facing your organization",
+          info: "Identify mitigation strategies for the risks facing your organization.",
         },
         {
           title: "Define recovery measures and procedures",
-          info: "Identify preparedness strategies for the loss of critical rolls, systems, and skills at your organization",
+          info: "Identify preparedness strategies for the loss of critical rolls, systems, and skills at your organization.",
         },
         {
           title: "Prepare for how you will respond after a crisis",
-          info: "Create a recovery team that will initiate recovery actions after a crisis",
+          info: "Create a recovery team that will initiate recovery actions after a crisis.",
         },
         {
           title: "Keep your plan up to date",
-          info: "Update your business continuity plan as threats and your company needs evolve",
+          info: "Update your business continuity plan as threats and your company needs evolve.",
         },
       ],
     },
     {
       title: "Security <span>Questionnaires</span> ",
-      url: "security-questionaires",
+      url: "security-questionnaires",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247607/service-segment-badges/secuirty-questionaire-service.svg",
-      headLine: `At CyberDats Pros, we guide you through the process, making sure your business meets top-notch security standards, fostering trust among your stakeholders.`,
+      headLine: `At CyberData Pros, we guide you through the process, making sure your business meets top-notch security standards, fostering trust among your stakeholders.`,
       textBlock: `<p>A typical security questionnaire is going to cover areas of your business that range from documentation of disaster recovery to physical security mechanisms in your business. On average, these questionnaires can be hundreds of questions long! Yes, you read that right, and many of these require answers within a few weeks.</p><br/><p>The team at CyberData Pros has years of experience filling these out and working alongside our clients to help get these completed. We will work to get these completed on your behalf so you can focus on running your business!</p>`,
       dropDownItems: [
         {
           title: "Initial Assessment and Information Gathering",
-          info: "Understanding the organization's security posture, policies, procedures, and the specific requirements of the questionnaire. Conduct a meeting to understand the organization security infrastructure & collect all relevant documentation, including previous security assessments, policies, and any compliance reports. Review the questionnaire to identify any gaps in information or areas that require detailed technical responses. ",
+          info: "Understanding the organization's security posture, policies, procedures, and the specific requirements of the questionnaire. Conduct a meeting to understand the organization security infrastructure & collect all relevant documentation, including previous security assessments, policies, and any compliance reports. Review the questionnaire to identify any gaps in information or areas that require detailed technical responses.",
         },
         {
           title: "Drafting and Reviewing Responses",
@@ -125,7 +125,7 @@ export const consultingData: ServicePageType = {
         },
         {
           title: "Incident Response Plan",
-          info: "A planned set of instructions to help IT detect, respond to, and recover from data privacy or security incidents. These types of plans address issues like cybercrime, data loss, and service outages.",
+          info: "A planned set of instructions to help IT detect, respond to, and recover from data privacy or security incidents. These types of plans address issues like cyber crime, data loss, and service outages.",
         },
         {
           title: "Risk Management Policy",
@@ -138,16 +138,16 @@ export const consultingData: ServicePageType = {
       url: "cloud-infrastructure",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247608/service-segment-badges/cloud-infrast-service.svg",
-      headLine: `As businesses continue to move more into the cloud, the associated risks keep growing and the costs keep climbing. CyberData Pros can help you maintain a clean, secure, and cost effective environment with our industry leading Cloud Infrastructure`,
+      headLine: `As businesses continue to move more into the cloud, the associated risks keep growing and the costs keep climbing. CyberData Pros can help you maintain a clean, secure, and cost effective environment with our industry leading Cloud Infrastructure.`,
       textBlock: `<p>We can identify gaps and weaknesses in the security and configurations of your cloud environment, analyze the design of your environment to identify potential cost savings and increase efficiency, as well provide critical insights on cloud-native risks to your business. The complexity of managing a full cloud infrastructure can be daunting, but CyberData Pros can help you stay organized, cost-effective, and secure.</p>`,
       dropDownItems: [
         {
           title: "Security",
-          info: `Security in the cloud is always a top priority, but things can get messy over time. A CIA can help you better understand your attack surface, uncover long-forgotten configuration errors, and risky default settings, and help regain control over your IAM/AD environment. Services include: attack surface mapping and evaluation, encryption settings, network/firewall configurations, IAM/AD policies`,
+          info: `Security in the cloud is always a top priority, but things can get messy over time. A CIA can help you better understand your attack surface, uncover long-forgotten configuration errors, and risky default settings, and help regain control over your IAM/AD environment. Services include: attack surface mapping and evaluation, encryption settings, network/firewall configurations, IAM/AD policies.`,
         },
         {
           title: "Cloud Sprawl Analysis",
-          info: `Monthly cloud costs have continued to steadily rise over the years, and businesses across all industries are feeling it. Our CIA can help identify outdated, inefficient, and underutilized resources to reduce your cloud environment’s complexity, increase efficiency, and even potentially lower costs. Services include: Identifying potential inefficiencies,  legacy components/processes, and orphaned/underutilized resources`,
+          info: `Monthly cloud costs have continued to steadily rise over the years, and businesses across all industries are feeling it. Our CIA can help identify outdated, inefficient, and underutilized resources to reduce your cloud environment’s complexity, increase efficiency, and even potentially lower costs. Services include: Identifying potential inefficiencies,  legacy components/processes, and orphaned/underutilized resources.`,
         },
         {
           title: "Cloud Risk Report",
