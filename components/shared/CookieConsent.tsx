@@ -21,7 +21,7 @@ const CookieConsent = () => {
   return (
     <div
       style={{
-        backgroundColor: "#F2F5F7",
+        backgroundColor: "#11131f",
         // height: 50,
         padding: 20,
         display: "flex",
@@ -34,6 +34,7 @@ const CookieConsent = () => {
       <span
         style={{
           fontSize: 16,
+          color: "white",
         }}
       >
         This website uses cookies to improve user experience. By using our
@@ -42,7 +43,7 @@ const CookieConsent = () => {
       <button
         style={{
           border: "none",
-          backgroundColor: "#21C55D",
+          backgroundColor: "#b58500",
           padding: "5px 10px",
           borderRadius: 5,
           fontSize: 18,
