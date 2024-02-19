@@ -6,7 +6,7 @@ export const POST = async (request: Request) => {
   try {
     const mail = await transporter.sendMail({
       from: "marketing@cyberdatapros.com",
-      to: "jenner.e.thomas@gmail.com",
+      to: "chris@cyberdatapros.com",
       subject: `Contact Request from ${data.name}`,
       html: `
             <p>Name: ${data.name || ""} </p>

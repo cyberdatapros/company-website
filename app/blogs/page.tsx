@@ -13,8 +13,4 @@ const page = async ({ searchParams }: { searchParams: { page: string } }) => {
   return <BlogList blogList={blogs.data} count={blogs.count} />;
 };
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-export const fetchCache = "force-no-store";
-
 export default page;
