@@ -11,7 +11,7 @@ export const cyberSecurityData: ServicePageType = {
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247602/service-segment-badges/vciso-service.svg",
       shortHand: "vCISO",
       headLine: `Our experts have served in a broad range of industries for companies of various sizes and know how to align security strategies with your company’s challenges.`,
-      textBlock: `<p>Your CISO plays a critical role in IT security strategy design, implementation, assessment, and mitigation of potential cyber-security risks.&nbsp;</p><p><br></p><p>Organizations can take advantage of this opportunity to utilize external expertise instead of maintaining a full-time, in-house position. As the expert in the latest cybersecurity and data privacy practices, responsibilities encompass staff training, leading client calls, conducting ongoing security and privacy audits to minimize gaps, and reviewing security questionnaires, client contracts, vendor paperwork, and other necessary documentation for business operations.</p>`,
+      textBlock: `<p>Your vCISO plays a critical role in IT security strategy design, implementation, assessment, and mitigation of potential cyber-security risks.&nbsp;</p><p><br></p><p>Organizations can take advantage of this opportunity to utilize external expertise instead of maintaining a full-time, in-house position. As the expert in the latest cybersecurity and data privacy practices, responsibilities encompass staff training, leading client calls, conducting ongoing security and privacy audits to minimize gaps, and reviewing security questionnaires, client contracts, vendor paperwork, and other necessary documentation for business operations.</p>`,
       dropDownItems: [
         {
           title: "Discovery and Integration",
@@ -26,7 +26,7 @@ export const cyberSecurityData: ServicePageType = {
           info: `Next, revise existing information security and data privacy policies and procedures, develop and provide additional information security and data privacy policies and documentation. Then partner with internal and external parties to follow through on remediation tasks and projects`,
         },
         {
-          title: "Ongoing tasks and responsibilitie",
+          title: "Ongoing tasks and responsibilities",
           info: "Collaborating closely with internal teams, serve as the internal subject matter expert on regulations and frameworks, including GDPR, CPRA, ISO, SOC, NIST, etc. Additionally, continually monitor and evaluate both internal and external risk management, collaborate with third parties to align technical, administrative, and physical security controls, and provide assistance in negotiating and aligning contracts with the business's information security and privacy requirements.",
         },
       ],
@@ -93,7 +93,7 @@ export const cyberSecurityData: ServicePageType = {
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247604/service-segment-badges/vulnerability-scan-service.svg",
       headLine:
-        "CyberData Pros uses our unique toolset to discover vulnerabilities within your network or application. Once we discover and document our findings, our team of certified experts will work with you to correct each vulnerability and make your business more secure.",
+        "CyberData Pros uses our unique tool set to discover vulnerabilities within your network or application. Once we discover and document our findings, our team of certified experts will work with you to correct each vulnerability and make your business more secure.",
       textBlock: `<p>Vulnerability scanning is a vital process that utilizes automated tools to uncover and identify known vulnerabilities across an organization's devices, systems, and networks. This systematic approach actively seeks out potential weaknesses, allowing for the timely detection and remediation of security risks. Regular vulnerability scanning is a fundamental practice to ensure the security and stability of your organization's systems, reducing the chances of exploitation by malicious entities.</p><p><br></p><p>Regularly incorporating vulnerability scanning into your security practices is a foundational step to upholding the integrity of your organization's systems, diminishing the risk of exploitation by malicious entities. By systematically identifying vulnerabilities, you empower your team to proactively address and enhance the security posture of your digital infrastructure.</p>`,
       dropDownItems: [
         {
@@ -106,21 +106,21 @@ export const cyberSecurityData: ServicePageType = {
         },
         {
           title: "Vulnerability Detection and Analysis",
-          info: "Vulnerability detection is a critical step, utilizing automated scanning tools to identify known vulnerabilities in the targeted assets. This involves comparing system configurations and software versions against a database of known vulnerabilities. The subsequent analysis of scan results prioritizes vulnerabilities based on severity, potential impact, exploitability, and the criticality of affected systems.",
+          info: "Vulnerability detection is a critical step, utilizing automated scanning tools to identify known vulnerabilities in the targeted assets. This involves comparing system configurations and software versions against a database of known vulnerabilities. The subsequent analysis of scan results prioritizes vulnerabilities based on severity, potential impact, exportability, and the criticality of affected systems.",
         },
         {
           title: "Reporting and Remediation Planning",
           info: "The reporting and remediation planning phase generates comprehensive reports that detail identified vulnerabilities, their risk levels, and recommended remediation steps. A remediation plan is then developed, outlining steps to address and mitigate the identified vulnerabilities while prioritizing efforts based on severity and potential impact.",
         },
         {
-          title: "Implementation of Fixes, Rescanning, and Documentation",
+          title: "Implementation of fixes, rescanning, and Documentation",
           info: "The final steps involve implementing fixes, where the remediation plan is executed through the application of patches, updates, or configuration changes to eliminate or mitigate vulnerabilities. Follow-up rescans are conducted to verify the successful remediation of vulnerabilities, ensuring ongoing security. Throughout the entire process, meticulous documentation is maintained, encompassing reports, remediation actions, and any changes made to enhance security.",
         },
       ],
     },
     {
       title: "Risk <span>Assessments</span>",
-      url: "risk-assesments",
+      url: "risk-assessments",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247605/service-segment-badges/risk-assessments-service.svg",
       headLine: `While risk assessments are phenomenal for newer businesses just getting started on building their cybersecurity infrastructure, they are also incredibly important for established security teams as well. CyberData Pros conducts regular risk assessments, allowing your company to track progress, quantify improvements made, and continue to identify new opportunities for improvement as you change and grow. 
@@ -146,7 +146,7 @@ export const cyberSecurityData: ServicePageType = {
       ],
     },
     {
-      title: "Tabletop <span>Excercises</span>",
+      title: "Tabletop <span>Exercises</span>",
       url: "tabletop-exercises",
       badgeImageUrl:
         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247606/service-segment-badges/tabletop-service.svg",

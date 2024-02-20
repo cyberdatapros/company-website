@@ -168,7 +168,7 @@ const ContactPage: React.FC = () => {
             required
           />
           <button className={styles["submit-button"]} type="submit">
-            lets&apos;s get started
+            let&apos;s get started
           </button>
           {displayMsg && (
             <p

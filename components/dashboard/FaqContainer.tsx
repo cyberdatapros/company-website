@@ -15,11 +15,11 @@ const faqData = [
   },
   {
     question: `What sets your cybersecurity consulting firm apart from others?`,
-    answer: `Our team includes highly skilled professionals with extensive experience in the field. We prioritize a personalized approach, tailoring our services to the specific needs of each client. In addition to keeping up with the latest threats and technologies, our ongoing commitment involves continuous education and certifications. This dedication guarentees that our solutions remain efficient and effective.`,
+    answer: `Our team includes highly skilled professionals with extensive experience in the field. We prioritize a personalized approach, tailoring our services to the specific needs of each client. In addition to keeping up with the latest threats and technologies, our ongoing commitment involves continuous education and certifications. This dedication guarantees that our solutions remain efficient and effective.`,
   },
   {
     question: `I'm located outside of the US, can you still help?`,
-    answer: `Our cybersecurity consulting services are not limited to any specific geographical location or the size of your organization. We can tailor our solutions to meet your specific needs. Our commitment to enhancing security extends to organizations of all sizes, ensuring that regardless of your location or scale, we are here to assist you in protecting uarding your assets. Rely on us to strengthen your security, so you can run a successful business. With CyberData Pros by your side, you can stay ahead of the threats before they start.`,
+    answer: `Our cybersecurity consulting services are not limited to any specific geographical location or the size of your organization. We can tailor our solutions to meet your specific needs. Our commitment to enhancing security extends to organizations of all sizes, ensuring that regardless of your location or scale, we are here to assist you in protecting and guarding your assets. Rely on us to strengthen your security, so you can run a successful business. With CyberData Pros by your side, you can stay ahead of the threats before they start.`,
   },
   // Add more questions and answers as needed
 ];
