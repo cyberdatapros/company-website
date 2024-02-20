@@ -108,7 +108,7 @@ const StaffCarousel = () => {
           </p>
 
           <p className={styles["staff-carousel-subheader"]}>
-            At our company, our team is comprised of individuals who bring a
+            At our company, our team is compromised of individuals who bring a
             wealth of expertise, creativity, and personalization to every
             project. Get to know the faces behind the innovation as we introduce
             you to the incredible people shaping the success of our company.
