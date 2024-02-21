@@ -22,7 +22,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div className={styles["about-container"]}>
+    <div className={styles["about-container"]} id="about-us">
       <div className={styles["about-us-text-content"]}>
         <p className={styles["text-content-header"]}>Know about us</p>
         <p className={styles["text-content-subheader"]}>

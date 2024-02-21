@@ -92,10 +92,45 @@ const Footer = () => {
               textAlign: "left",
               fontSize: 16,
             }}
+            rel="nofollow"
+            href={"/#about-us"}
+          >
+            About Us
+          </Link>
+          <Link
+            style={{
+              color: "#84878b",
+              marginTop: 20,
+              textAlign: "left",
+              fontSize: 16,
+            }}
             href={"/privacy-policy"}
           >
-            {" "}
             Privacy Policy
+          </Link>
+          <Link
+            style={{
+              color: "#84878b",
+              marginTop: 20,
+              textAlign: "left",
+              fontSize: 16,
+            }}
+            rel="nofollow"
+            href={"/#faq"}
+          >
+            FAQ
+          </Link>
+          <Link
+            style={{
+              color: "#84878b",
+              marginTop: 20,
+              textAlign: "left",
+              fontSize: 16,
+            }}
+            rel="nofollow"
+            href={"/#services"}
+          >
+            Services
           </Link>
         </div>
         {services.map((service) => (

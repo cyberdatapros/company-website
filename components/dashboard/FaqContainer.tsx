@@ -26,7 +26,7 @@ const faqData = [
 
 const FaqContainer = () => {
   return (
-    <div className={styles["faq-container"]}>
+    <div className={styles["faq-container"]} id="faq">
       <div className={styles["faq-info"]}>
         <h3 className={styles["faq-header"]}>Frequently Asked Questions</h3>
         <p className={styles["faq-subheader"]}>

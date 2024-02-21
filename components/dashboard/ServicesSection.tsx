@@ -5,7 +5,7 @@ import servicesArray from "@/data/dashboardServicesData";
 
 const ServicesSectionDashboard = () => {
   return (
-    <div className={styles["services-container"]}>
+    <div className={styles["services-container"]} id="services">
       <h2 className={styles["heading"]}>Browse Our services</h2>
       <p className={styles["sub-heading"]}>
         Regardless of whether your business is small or large, located in the US
