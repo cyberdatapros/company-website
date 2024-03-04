@@ -1,17 +1,18 @@
 import ServicePage from "@/components/pages/ServicePage";
 import ServiceSegmentPage from "@/components/pages/ServiceSegmentPage";
-import { ServicesType, servicesData } from "@/data/servicesPageData";
-import { type } from "os";
+import { servicesData } from "@/data/servicesPageData";
+import { redirect } from "next/navigation";
 import React from "react";
-type ServiceKeyType = keyof ServicesType;
 
 const page = async ({ params }: { params: { type: Array<string> } }) => {
   const [service, segment] = params.type;
 
   if (service in servicesData && !segment) {
     return <ServicePage serviceKey={service} />;
-  } else {
+  } else if (service in servicesData && segment) {
     return <ServiceSegmentPage serviceKey={service} segmentKey={segment} />;
+  } else {
+    redirect("/#services");
   }
 };
 
