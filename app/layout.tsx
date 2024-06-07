@@ -5,6 +5,7 @@ import { Poppins, DM_Sans } from "next/font/google";
 import { Keywords } from "@/data/seoKeywords";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: "500" });
 
@@ -67,6 +68,7 @@ export default function RootLayout({
         {children}
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-6D2RGHJRV0" />
       <Script
         suppressHydrationWarning
         type="text/javascript"
