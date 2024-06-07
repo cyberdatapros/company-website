@@ -5,7 +5,8 @@ import { Poppins, DM_Sans } from "next/font/google";
 import { Keywords } from "@/data/seoKeywords";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { Suspense } from "react";
+import { NavigationEvents } from "@/components/navigation-events";
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: "500" });
 
@@ -67,8 +68,26 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Analytics />
+        <Suspense fallback={null}>
+          <NavigationEvents />
+        </Suspense>
       </body>
-      <GoogleAnalytics gaId="G-6D2RGHJRV0" />
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-6D2RGHJRV0`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6D2RGHJRV0');
+          `,
+        }}
+      />
       <Script
         suppressHydrationWarning
         type="text/javascript"
