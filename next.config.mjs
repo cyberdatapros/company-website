@@ -37,6 +37,15 @@ const nextConfig = {
         destination: "/blogs?page=1",
         permanent: true,
       },
+      {
+        source: "/services/compliance/hipaa",
+        destination: "/#services",
+        permanent: true
+      },
+      {source: "/services/compliance/pci",
+        destination: "/#services",
+        permanent: true,
+      },
     ];
   },
   images: {

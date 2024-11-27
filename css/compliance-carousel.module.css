@@ -12,8 +12,14 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 4));
   }
+}
+
+.compliance-slide-track {
+  animation: scroll var(--animation-speed) linear infinite;
+  display: flex;
+  width: calc(250px * 10);
 }
 
 .compliance-slider {
@@ -47,12 +53,6 @@
 .compliance-slider::before {
   left: 0;
   top: 0;
-}
-
-.compliance-slide-track {
-  animation: scroll var(--animation-speed) linear infinite;
-  display: flex;
-  width: calc(250px * 12);
 }
 
 .compliance-slide-item {

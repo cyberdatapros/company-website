@@ -83,22 +83,6 @@ export const staffArray: {
     ],
   },
   {
-    name: "matt sherrod",
-    title: "Data Privacy & Security Analyst",
-    image:
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970884/profile-pics/matt-s.svg",
-    bio: `Matt is a dedicated cybersecurity professional with a solid foundation in the field. He graduated with a Bachelor of Science degree from Kennesaw State University, where he majored in Cybersecurity and minored in Information Technology. Matt currently holds certifications such as CompTIA A+ and Security+, and is also well-equipped with knowledge in software engineering. Matt is also a CyberAB Registered Practitioner Advanced. Beyond work, Matt finds excitement in long-distance running and loves to go to the gym. Matt also is a huge soccer fan.`,
-    social: "https://www.linkedin.com/in/matthew-sherrod-123a6070/",
-    certs: [
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016403/certs/comptia-aplus.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016399/certs/comptia-securityplus.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016387/certs/one-privacy-professional.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016392/certs/azure-fundamentals.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016394/certs/cyber-ab-pract.png",
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016395/certs/cyber-ab-pract-registered.png",
-    ],
-  },
-  {
     name: "alex mcMath",
     title: "Data Privacy & Security Analyst",
     image:
@@ -123,26 +107,6 @@ export const staffArray: {
     ],
   },
   {
-    name: "leah eubanks",
-    title: "Data Privacy & Security Analyst",
-    image:
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970886/profile-pics/leah-e.svg",
-    bio: `Leah graduated from Kennesaw State University in 2023 with a degree in Information Systems and a minor in Information Security and Assurance. Throughout her college career, she gained a solid foundation in data privacy and security principles such as risk assessment, compliance, security strategies, and incident response. Outside of work, Leah enjoys reading, playing games with her friends, and walking her dog.`,
-    social: "https://www.linkedin.com/in/leah-e123/",
-    certs: [
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707016394/certs/cyber-ab-pract.png",
-    ],
-  },
-  // {
-  //   name: "abbey gorman",
-  //   title: "Sales Account Executive",
-  //   image:
-  //     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970886/profile-pics/abbey-g.svg",
-  //   bio: `Abbey graduated magna cum laude with her B.S. from Franklin University, where she double-majored in Business Administration and Marketing. With over a decade in customer-facing roles, Abbey has extensive experience in consultative sales, business development, and operations. Previously, she has worked with a variety of clients ranging from early-stage startups to Fortune 500 tech companies. In her spare time, you'll find her gardening, PC gaming, and tackling DIY projects with her husband.`,
-  //   social: "https://www.linkedin.com/in/abbey-gorman/",
-  //   certs: []
-  // },
-  {
     name: "kiley choum",
     title: "Account Manager",
     image:
@@ -163,12 +127,11 @@ throughout her career. Being a Personal Banker for many years came with excellen
     certs: [],
   },
   {
-    name: "olivia genthner",
-    title: "Executive Assistant",
-    image:
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970887/profile-pics/olivia-genthner.svg",
-    bio: `Olivia grew up in a small fishing town in Round Pond, Maine and moved to Georgia in 2016 with bigger career dreams. Olivia has 10+ years of experience assisting in company operations, customer service, and client satisfaction. She excels in problem solving, organization, and multi-tasking - always with a bright and positive attitude. In her free time you can find her in nature, painting, cooking, or spending quality time with her husband and pets.`,
-    social: "https://www.linkedin.com/in/oliviaraye/",
+    name: "Derrick Roche",
+    title: "Account Executive",
+    image: "https://res.cloudinary.com/dzqp0dnia/image/upload/c_scale,h_475,q_auto:best,w_400/v1732672469/profile-pics/derrick-r-profile_dacasd.png",
+    bio: "Performance-driven Sales Leader with over 6 years of experience, numerous earned promotions, and a history of driving sales growth and establishing large market shares within regional and national markets, resulting in millions of dollars in additional revenues.",
     certs: [],
-  },
+    social: "https://www.linkedin.com/in/derrick-roche/"
+  }
 ];
