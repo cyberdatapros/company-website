@@ -73,12 +73,12 @@ const links: MenuItem[] = [
     ),
     getItem(<Link href={`/resources`}>Resources</Link>, "re-sus", <></>),
   ]),
-  getItem(
-    <a href="http://CyberDataproslearning.com">Training</a>,
-    "train",
-    <></>,
-    []
-  ),
+  // getItem(
+  //   <a href="http://CyberDataproslearning.com">Training</a>,
+  //   "train",
+  //   <></>,
+  //   []
+  // ),
   getItem(
     <a
       href="/contact"

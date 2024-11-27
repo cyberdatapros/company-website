@@ -143,7 +143,7 @@ const Footer = () => {
           color: "#84878b",
         }}
       >
-        &copy; 2024 CyberData Pros. All rights reserved.
+        &copy; {new Date().getFullYear()} CyberData Pros. All rights reserved.
       </p>
     </footer>
   );

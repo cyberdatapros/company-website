@@ -140,38 +140,38 @@ export const complianceData: ServicePageType = {
         },
       ],
     },
-    {
-      title:
-        "Health Insurance <span>Portability</span> and <span>Accountability</span> Act",
-      url: "hipaa",
-      badgeImageUrl:
-        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247597/service-segment-badges/hipaa-service.svg",
-      shortHand: "HIPAA",
-      headLine: `HIPAA regulations are continuously evolving and penalties can be costly. CyberData Pros will review your processes, perform audits, and train your team to ensure your business complies with all HIPAA guidelines.`,
-      textBlock: `<p>HIPAA is a significant U.S. federal law established in 1996 to ensure the privacy and security of individuals' health information. It consists of key components such as the Privacy Rule, focusing on protecting identifiable health data, and the Security Rule, which sets standards for protecting electronic health information.&nbsp;</p><p><br></p><p>HIPAA applies to healthcare providers, plans, and clearinghouses, along with their business associates. The law aims to balance the exchange of necessary healthcare information with the protection of sensitive data, and compliance is crucial to avoid legal consequences and maintain patient trust.</p><p><br></p><p>Although the path to full HIPAA compliance can seem like an imposing process in terms of time and resources, it’s important to remember that the effort fulfills more than just meeting a regulatory requirement – it’s also about building trust with patients and clients. When an organization maintains compliance with exacting standards like HIPAA, it sends a message that it values and protects patients’ privacy and personal information. This trust can translate into stronger relationships with patients, improved reputation, and ultimately, better business outcomes.</p>`,
-      dropDownItems: [
-        {
-          title: "Risk Analysis and Management",
-          info: `Conduct a thorough and accurate assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of PHI. This process should be systematic and ongoing, periodically reassessed to address changes in the organization’s practices or advancements in technology.`,
-        },
-        {
-          title: "Policies and Procedures",
-          info: `Develop and implement HIPAA-compliant policies and procedures. This includes guidelines on handling, accessing, and disclosing PHI. Policies should cover areas like the use and disclosure of PHI, rights of individuals, administrative responsibilities, and breach notification processes.`,
-        },
-        {
-          title: "Training and Awareness",
-          info: `All workforce members, including employees, volunteers, and trainees, should be trained and aware of the HIPAA Rules and the organization’s policies and procedures. Additionally, a major goal is to foster a culture of compliance where employees understand the importance of protecting PHI and feel comfortable reporting potential issues without fear of retaliation.`,
-        },
-        {
-          title: "Regular Audits",
-          info: `Audits are essential to ensure that the organization is adhering to its policies and HIPAA rules. These audits can help identify any gaps or areas of non-compliance and provide an opportunity to address these issues proactively. Regular audits can also serve as a way to monitor the effectiveness of the organization’s training and awareness programs.`,
-        },
-        {
-          title: "Incident Response",
-          info: " Even with thorough precautions taken, breaches can still occur. Hence, it is essential to have a robust incident response plan in place. This plan should outline the steps to be taken in the event of a breach, including identifying and containing the breach, assessing the impact, notifying the affected individuals and authorities, and taking steps to prevent future breaches. The plan should be reviewed and tested regularly to ensure its effectiveness.",
-        },
-      ],
-    },
+    // {
+    //   title:
+    //     "Health Insurance <span>Portability</span> and <span>Accountability</span> Act",
+    //   url: "hipaa",
+    //   badgeImageUrl:
+    //     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247597/service-segment-badges/hipaa-service.svg",
+    //   shortHand: "HIPAA",
+    //   headLine: `HIPAA regulations are continuously evolving and penalties can be costly. CyberData Pros will review your processes, perform audits, and train your team to ensure your business complies with all HIPAA guidelines.`,
+    //   textBlock: `<p>HIPAA is a significant U.S. federal law established in 1996 to ensure the privacy and security of individuals' health information. It consists of key components such as the Privacy Rule, focusing on protecting identifiable health data, and the Security Rule, which sets standards for protecting electronic health information.&nbsp;</p><p><br></p><p>HIPAA applies to healthcare providers, plans, and clearinghouses, along with their business associates. The law aims to balance the exchange of necessary healthcare information with the protection of sensitive data, and compliance is crucial to avoid legal consequences and maintain patient trust.</p><p><br></p><p>Although the path to full HIPAA compliance can seem like an imposing process in terms of time and resources, it’s important to remember that the effort fulfills more than just meeting a regulatory requirement – it’s also about building trust with patients and clients. When an organization maintains compliance with exacting standards like HIPAA, it sends a message that it values and protects patients’ privacy and personal information. This trust can translate into stronger relationships with patients, improved reputation, and ultimately, better business outcomes.</p>`,
+    //   dropDownItems: [
+    //     {
+    //       title: "Risk Analysis and Management",
+    //       info: `Conduct a thorough and accurate assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of PHI. This process should be systematic and ongoing, periodically reassessed to address changes in the organization’s practices or advancements in technology.`,
+    //     },
+    //     {
+    //       title: "Policies and Procedures",
+    //       info: `Develop and implement HIPAA-compliant policies and procedures. This includes guidelines on handling, accessing, and disclosing PHI. Policies should cover areas like the use and disclosure of PHI, rights of individuals, administrative responsibilities, and breach notification processes.`,
+    //     },
+    //     {
+    //       title: "Training and Awareness",
+    //       info: `All workforce members, including employees, volunteers, and trainees, should be trained and aware of the HIPAA Rules and the organization’s policies and procedures. Additionally, a major goal is to foster a culture of compliance where employees understand the importance of protecting PHI and feel comfortable reporting potential issues without fear of retaliation.`,
+    //     },
+    //     {
+    //       title: "Regular Audits",
+    //       info: `Audits are essential to ensure that the organization is adhering to its policies and HIPAA rules. These audits can help identify any gaps or areas of non-compliance and provide an opportunity to address these issues proactively. Regular audits can also serve as a way to monitor the effectiveness of the organization’s training and awareness programs.`,
+    //     },
+    //     {
+    //       title: "Incident Response",
+    //       info: " Even with thorough precautions taken, breaches can still occur. Hence, it is essential to have a robust incident response plan in place. This plan should outline the steps to be taken in the event of a breach, including identifying and containing the breach, assessing the impact, notifying the affected individuals and authorities, and taking steps to prevent future breaches. The plan should be reviewed and tested regularly to ensure its effectiveness.",
+    //     },
+    //   ],
+    // },
     {
       title: "System and <span>Organization</span> Controls",
       url: "soc",
@@ -233,32 +233,32 @@ export const complianceData: ServicePageType = {
         },
       ],
     },
-    {
-      title: "PCI",
-      url: "pci",
-      badgeImageUrl:
-        "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/pci-service.svg",
-      headLine: `Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData Pros can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.`,
-      textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><br><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><br/><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and a damaged reputation. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
-`,
-      dropDownItems: [
-        {
-          title: "Determine your PCI level",
-          info: "Identify your merchant or service provider level based on transaction volume and interaction with cardholder data.",
-        },
-        {
-          title: "Understand PCI standards",
-          info: "Familiarize yourself with the 12 key steps of PCI DSS compliance, covering areas such as data protection, access control, and security policies.",
-        },
-        {
-          title: "Assess current compliance status",
-          info: "Evaluate which PCI standards your business already meets and identify areas needing improvement.",
-        },
-        {
-          title: "Address remaining compliance tasks",
-          info: "Use your assessment to create a to-do list for achieving PCI compliance, including tasks like vulnerability scanning and system updates.",
-        },
-      ],
-    },
+//     {
+//       title: "PCI",
+//       url: "pci",
+//       badgeImageUrl:
+//         "https://res.cloudinary.com/dzqp0dnia/image/upload/v1707247601/service-segment-badges/pci-service.svg",
+//       headLine: `Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData Pros can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.`,
+//       textBlock: `<p>Payment Card Industry Data Security Standard (PCI DSS or PCI) is mandated by credit card companies for anyone handling credit card transactions. CyberData ProThe Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure the protection of sensitive payment card information during payment transactions.</p><br><p>&nbsp;Developed by major credit card companies, including Visa, MasterCard, American Express, Discover, and JCB, PCI DSS aims to establish a secure environment for the processing, transmission, and storage of cardholder data. The standard encompasses twelve high-level requirements, including the installation and maintenance of firewalls, encryption of data, access control measures, and regular monitoring and testing of security systems. Compliance with PCI DSS is mandatory for any organization that handles payment card transactions, including merchants, financial institutions, and service providers.</p><br/><p>&nbsp;Non-compliance may result in financial penalties, loss of card processing privileges, and a damaged reputation. Implementing and maintaining PCI DSS compliance is crucial not only for meeting industry regulations but also for safeguarding the trust of customers and protecting against potential data breaches and financial fraud.s can help you define and implement the technical and operational standards needed for PCI compliance no matter the size of your business or number of transactions you process.</p>
+// `,
+//       dropDownItems: [
+//         {
+//           title: "Determine your PCI level",
+//           info: "Identify your merchant or service provider level based on transaction volume and interaction with cardholder data.",
+//         },
+//         {
+//           title: "Understand PCI standards",
+//           info: "Familiarize yourself with the 12 key steps of PCI DSS compliance, covering areas such as data protection, access control, and security policies.",
+//         },
+//         {
+//           title: "Assess current compliance status",
+//           info: "Evaluate which PCI standards your business already meets and identify areas needing improvement.",
+//         },
+//         {
+//           title: "Address remaining compliance tasks",
+//           info: "Use your assessment to create a to-do list for achieving PCI compliance, including tasks like vulnerability scanning and system updates.",
+//         },
+//       ],
+//     },
   ],
 };

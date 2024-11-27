@@ -45,12 +45,12 @@ export const complianceBadges: Array<{
       "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726183/complliance-badges/8_la2zml.svg",
     color: "#e0f1fb",
   },
-  {
-    title: "hipaa",
-    image:
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726180/complliance-badges/5_dvhyhy.svg",
-    color: "#b8dff5",
-  },
+  // {
+  //   title: "hipaa",
+  //   image:
+  //     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726180/complliance-badges/5_dvhyhy.svg",
+  //   color: "#b8dff5",
+  // },
   {
     title: "iso 27001",
     image:
@@ -63,12 +63,12 @@ export const complianceBadges: Array<{
       "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726179/complliance-badges/4_n9nywu.svg",
     color: "#b8dff5",
   },
-  {
-    title: "pci",
-    image:
-      "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726186/complliance-badges/11_vqbwdl.svg",
-    color: "#e0f1fb",
-  },
+  // {
+  //   title: "pci",
+  //   image:
+  //     "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705726186/complliance-badges/11_vqbwdl.svg",
+  //   color: "#e0f1fb",
+  // },
   {
     title: "state ramp",
     image:

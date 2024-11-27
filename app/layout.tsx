@@ -74,6 +74,26 @@ export default function RootLayout({
         type="text/javascript"
         src="https://chimpstatic.com/mcjs-connected/js/users/74e766e064366f581ab2b9424/24275a96a775217c7001c493c.js"
       />
+      <Script
+        id="apollo-tracker"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            function initApollo() {
+              var n = Math.random().toString(36).substring(7);
+              var o = document.createElement("script");
+              o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+              o.async = true;
+              o.defer = true;
+              o.onload = function() {
+                window.trackingFunctions.onLoad({ appId: "6734c0d0a4de0f057db51ccf" });
+              };
+              document.head.appendChild(o);
+            }
+            initApollo();
+          `,
+        }}
+      />
     </html>
   );
 }
