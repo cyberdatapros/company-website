@@ -122,7 +122,7 @@ throughout her career. Being a Personal Banker for many years came with excellen
     title: "Account Manager",
     image:
       "https://res.cloudinary.com/dzqp0dnia/image/upload/v1705970887/profile-pics/kristen-wyatt.svg",
-    bio: `Kristen has an extensive background with over a decade in the technology sector and customer service. Her expertise extends to the email deliverability domain, as well. Her standout qualities include exceptional communication skills, an ability to handle multiple tasks simultaneously, and a consistent track record of exceeding expectations. Beyond her professional achievements, Kristen is a family-oriented individual, prioritizing work-life balance. She also enjoys painting and has a deep connection to music. In her`,
+    bio: `Kristen has an extensive background with over a decade in the technology sector and customer service. Her expertise extends to the email deliverability domain, as well. Her standout qualities include exceptional communication skills, an ability to handle multiple tasks simultaneously, and a consistent track record of exceeding expectations. Beyond her professional achievements, Kristen is a family-oriented individual, prioritizing work-life balance. She also enjoys painting and has a deep connection to music.`,
     social: "https://www.linkedin.com/in/kristen-wyatt/",
     certs: [],
   },
