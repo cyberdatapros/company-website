@@ -129,8 +129,8 @@ throughout her career. Being a Personal Banker for many years came with excellen
   {
     name: "Derrick Roche",
     title: "Account Executive",
-    image: "https://res.cloudinary.com/dzqp0dnia/image/upload/c_scale,h_475,q_auto:best,w_400/v1732672469/profile-pics/derrick-r-profile_dacasd.png",
-    bio: "Performance-driven Sales Leader with over 6 years of experience, numerous earned promotions, and a history of driving sales growth and establishing large market shares within regional and national markets, resulting in millions of dollars in additional revenues.",
+    image: "https://res.cloudinary.com/dzqp0dnia/image/upload/v1733247858/profile-pics/derrick-profile.svg",
+    bio: "Performance-driven Sales Leader with over 6 years of experience, numerous earned promotions, and a history of driving sales growth and establishing large market shares within regional and national markets, resulting in millions of dollars in additional revenues. Skilled at developing and executing sales strategies with a focus on value creation and competitive differentiation, identifying and capitalizing on emerging market trends and revenue opportunities. Expert relationship builder, quick at instilling confidence in prospects and clients while cultivating long-term relationships. Proactive and analytical thinker, applying problem-solving skills and resourcefulness to strategically develop innovative solutions.",
     certs: [],
     social: "https://www.linkedin.com/in/derrick-roche/"
   }
