@@ -36,7 +36,7 @@
 
 .profile-image {
   width: 250px;
-  height: 240px;
+  height: 250px;
   border: 5px solid var(--brand-gold);
   background-color: rgb(169, 166, 166);
   border-radius: 200px;
@@ -142,8 +142,8 @@
   }
 
   .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 320px;
+    height: 320px;
   }
 
   .profile-details-container {
